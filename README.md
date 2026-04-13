@@ -1,6 +1,6 @@
 # BOS Sink-Neuron Experiments
 
-This codebase turns the notebook prototype into a scripts-first pipeline for sink-neuron experiments on `meta-llama/Meta-Llama-3-8B`.
+This codebase is a scripts-first pipeline for sink-neuron experiments on `meta-llama/Meta-Llama-3-8B`.
 
 Typical command order:
 
