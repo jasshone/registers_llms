@@ -4,3 +4,6 @@ __pycache__/
 outputs/
 
 .ipynb_checkpoints/
+.venv/
+.hf_cache/
+.cache/

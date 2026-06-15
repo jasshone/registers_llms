@@ -5,7 +5,7 @@ from pathlib import Path
 
 from sink_neurons.env import configure_runtime
 from sink_neurons.modeling import DEFAULT_MODEL_ID, load_tokenizer
-from sink_neurons.windows import WindowBuildConfig, build_windows_tensor, save_windows_artifact
+from sink_neurons.windows import WindowBuildConfig, build_windows_tensor, resolve_start_token, save_windows_artifact
 
 
 def parse_args() -> argparse.Namespace:
@@ -24,6 +24,7 @@ def main() -> None:
     configure_runtime()
     args = parse_args()
     tokenizer = load_tokenizer(args.model_id)
+    start_token = resolve_start_token(tokenizer)
     windows, stream_length = build_windows_tensor(
         tokenizer,
         split=args.split,
@@ -44,7 +45,8 @@ def main() -> None:
         windows=windows,
         config=config,
         tokenized_stream_length=stream_length,
-        bos_token_id=tokenizer.bos_token_id,
+        bos_token_id=start_token.token_id,
+        start_token_source=start_token.source,
     )
     print(f"Saved {windows.shape[0]} windows to {args.output}")
 

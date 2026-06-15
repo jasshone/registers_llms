@@ -64,7 +64,41 @@ def resolve_device(model: PreTrainedModel) -> torch.device:
 
 
 def get_embed_tokens(model: PreTrainedModel) -> torch.nn.Module:
-    return model.model.embed_tokens
+    if hasattr(model, "model") and hasattr(model.model, "embed_tokens"):
+        return model.model.embed_tokens
+    if hasattr(model, "model") and hasattr(model.model, "language_model") and hasattr(model.model.language_model, "embed_tokens"):
+        return model.model.language_model.embed_tokens
+    if hasattr(model, "model") and hasattr(model.model, "decoder") and hasattr(model.model.decoder, "embed_tokens"):
+        return model.model.decoder.embed_tokens
+    if hasattr(model, "transformer") and hasattr(model.transformer, "wte"):
+        return model.transformer.wte
+    if hasattr(model, "gpt_neox") and hasattr(model.gpt_neox, "embed_in"):
+        return model.gpt_neox.embed_in
+    raise AttributeError("Unsupported model architecture: cannot find token embedding module")
+
+
+def get_transformer_layers(model: PreTrainedModel) -> torch.nn.ModuleList:
+    if hasattr(model, "model") and hasattr(model.model, "layers"):
+        return model.model.layers
+    if hasattr(model, "model") and hasattr(model.model, "language_model") and hasattr(model.model.language_model, "layers"):
+        return model.model.language_model.layers
+    if hasattr(model, "model") and hasattr(model.model, "decoder") and hasattr(model.model.decoder, "layers"):
+        return model.model.decoder.layers
+    if hasattr(model, "transformer") and hasattr(model.transformer, "h"):
+        return model.transformer.h
+    if hasattr(model, "gpt_neox") and hasattr(model.gpt_neox, "layers"):
+        return model.gpt_neox.layers
+    raise AttributeError("Unsupported model architecture: cannot find transformer layers")
+
+
+def get_mlp_intermediate_size(model: PreTrainedModel) -> int:
+    if hasattr(model.config, "intermediate_size"):
+        return int(model.config.intermediate_size)
+    if getattr(model.config, "n_inner", None) is not None:
+        return int(model.config.n_inner)
+    if hasattr(model.config, "n_embd"):
+        return int(4 * model.config.n_embd)
+    raise AttributeError("Unsupported model architecture: cannot infer MLP intermediate size")
 
 
 def model_output_dir(root: Path, kind: str) -> Path:

@@ -7,14 +7,18 @@ from typing import Iterator
 import torch
 from datasets import load_dataset
 from torch.utils.data import DataLoader, Dataset
-from tqdm.auto import tqdm
+try:
+    from tqdm.auto import tqdm
+except ModuleNotFoundError:
+    def tqdm(iterable=None, *args, **kwargs):
+        return iterable if iterable is not None else ()
 from transformers import PreTrainedTokenizerBase
 
 from .artifacts import load_pt, save_artifact
 from .types import WindowArtifactMetadata, normalize_path
 
 
-DATASET_NAME = "wikitext"
+DATASET_NAME = "Salesforce/wikitext"
 DATASET_CONFIG = "wikitext-103-raw-v1"
 
 
@@ -25,6 +29,20 @@ class WindowBuildConfig:
     window_length: int
     stride: int
     max_windows: int | None
+
+
+@dataclass(frozen=True)
+class StartToken:
+    token_id: int
+    source: str
+
+
+def resolve_start_token(tokenizer: PreTrainedTokenizerBase) -> StartToken:
+    if tokenizer.bos_token_id is not None:
+        return StartToken(token_id=int(tokenizer.bos_token_id), source="bos")
+    if tokenizer.eos_token_id is not None:
+        return StartToken(token_id=int(tokenizer.eos_token_id), source="eos_fallback")
+    raise ValueError("Tokenizer must define bos_token_id or eos_token_id")
 
 
 class TensorWindowDataset(Dataset[torch.Tensor]):
@@ -62,9 +80,7 @@ def build_windows_tensor(
         raise ValueError("window_length must be at least 2 to allow BOS + text tokens")
     if stride <= 0:
         raise ValueError("stride must be positive")
-    bos_token_id = tokenizer.bos_token_id
-    if bos_token_id is None:
-        raise ValueError("Tokenizer must define bos_token_id")
+    start_token = resolve_start_token(tokenizer)
 
     content_length = window_length - 1
     windows: list[list[int]] = []
@@ -83,7 +99,7 @@ def build_windows_tensor(
         progress.update(1)
 
         while len(token_buffer) >= content_length:
-            windows.append([bos_token_id, *token_buffer[:content_length]])
+            windows.append([start_token.token_id, *token_buffer[:content_length]])
             progress.set_postfix(windows=len(windows))
             if max_windows is not None and len(windows) >= max_windows:
                 break
@@ -106,6 +122,7 @@ def save_windows_artifact(
     config: WindowBuildConfig,
     tokenized_stream_length: int,
     bos_token_id: int,
+    start_token_source: str = "bos",
 ) -> None:
     metadata = WindowArtifactMetadata(
         dataset_name=DATASET_NAME,
@@ -129,6 +146,8 @@ def save_windows_artifact(
             "window_length": config.window_length,
             "stride": config.stride,
             "max_windows": config.max_windows,
+            "start_token_id": bos_token_id,
+            "start_token_source": start_token_source,
         },
     )
 
