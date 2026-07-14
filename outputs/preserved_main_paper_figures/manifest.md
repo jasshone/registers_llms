@@ -21,7 +21,8 @@ Rendered from existing result files; no training or exhaustive grid was run.
 ## Source CSVs
 - figure2: `outputs/realtext_toy_shifted_bos_gradients/wikitext103_train_expanded_3seed/aggregate_gradient_summary.csv`
 - figure2_cached_reference: `outputs/realtext_toy_bos_train_position/wikitext_pythia_cached_val_windows/bos_train_position_summary.csv`
-- figure3: `outputs/realtext_toy_bos_presence_controls/wikitext103_train_3seed/aggregate_summary.csv`
+- figure3: `outputs/realtext_toy_shifted_bos_gradients/wikitext103_train_expanded_3seed/aggregate_gradient_summary.csv`
+- figure3_presence_reference: `outputs/realtext_toy_bos_presence_controls/wikitext103_train_3seed/aggregate_summary.csv`
 - figure7: `outputs/toy_pretrained_bridge/wikitext_pythia_tokenizer_10k_scale10_test512/toy_relocation_bridge_metrics.csv`
 - figure8: `outputs/sink_hijacking_attack/repeated_bos_prefix/pythia_1b_full/repeated_bos_prefix_metrics.csv`
 - figure9_wikitext: `outputs/final_split_bias_transfer_source_abs_bonus0/final_results.csv`
@@ -30,4 +31,4 @@ Rendered from existing result files; no training or exhaustive grid was run.
 
 Notes:
 - Figure 2 now uses the train-text Wikitext103 expanded 3-seed shifted-BOS aggregate. The older cached validation-window sweep is copied as `figure2_cached_reference_bos_train_position_summary.csv`.
-- Figure 3 uses the available aggregate seed summary; variants with a single seed have zero/blank visible error bars.
+- Figure 3 now uses the train-text Wikitext103 expanded 3-seed shifted-BOS aggregate; the older uneven-seed presence-control aggregate is copied as `figure3_presence_reference_aggregate_summary.csv`.

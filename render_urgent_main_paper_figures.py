@@ -23,6 +23,10 @@ SOURCES = {
         "wikitext_pythia_cached_val_windows/bos_train_position_summary.csv"
     ),
     "figure3": Path(
+        "outputs/realtext_toy_shifted_bos_gradients/"
+        "wikitext103_train_expanded_3seed/aggregate_gradient_summary.csv"
+    ),
+    "figure3_presence_reference": Path(
         "outputs/realtext_toy_bos_presence_controls/"
         "wikitext103_train_3seed/aggregate_summary.csv"
     ),
@@ -156,29 +160,28 @@ def fig2_bos_position_sweep() -> None:
 def fig3_bos_identity_controls() -> None:
     order = ["single_0", "no_bos", "single_8", "single_32", "duplicate_0,8", "duplicate_0,32"]
     df = pd.read_csv(SOURCES["figure3"])
+    df = df[df["variant"].isin(order)].copy()
     df["variant"] = pd.Categorical(df["variant"], order, ordered=True)
     df = df.sort_values("variant")
-    write_table(
-        df[
-            [
-                "variant",
-                "bos_positions",
-                "seeds",
-                "n_seeds",
-                "loss_mean",
-                "loss_std",
-                "ppl_mean",
-                "ppl_std",
-                "pos0_attention_mean_mean",
-                "pos0_attention_mean_std",
-                "bos_attention_sum_mean_mean",
-                "bos_attention_sum_mean_std",
-                "bos_attention_max_position_mean_mean",
-                "bos_attention_max_position_mean_std",
-            ]
-        ],
-        "figure3_bos_identity_controls_exact",
-    )
+    table = df[
+        [
+            "variant",
+            "bos_positions",
+            "seeds",
+            "n_seeds",
+            "eval_loss_mean",
+            "eval_loss_std",
+            "pos0_attention_mean_mean",
+            "pos0_attention_mean_std",
+            "bos_attention_sum_mean_mean",
+            "bos_attention_sum_mean_std",
+            "bos_qk_pressure_max_position_mean_mean",
+            "bos_qk_pressure_max_position_mean_std",
+            "bos_qk_pressure_sum_mean_mean",
+            "bos_qk_pressure_sum_mean_std",
+        ]
+    ]
+    write_table(table, "figure3_bos_identity_controls_exact")
 
     x = np.arange(len(df))
     width = 0.36
@@ -492,7 +495,7 @@ def write_manifest() -> None:
             "",
             "Notes:",
             "- Figure 2 now uses the train-text Wikitext103 expanded 3-seed shifted-BOS aggregate. The older cached validation-window sweep is copied as `figure2_cached_reference_bos_train_position_summary.csv`.",
-            "- Figure 3 uses the available aggregate seed summary; variants with a single seed have zero/blank visible error bars.",
+            "- Figure 3 now uses the train-text Wikitext103 expanded 3-seed shifted-BOS aggregate; the older uneven-seed presence-control aggregate is copied as `figure3_presence_reference_aggregate_summary.csv`.",
         ]
     )
     (OUT_DIR / "manifest.md").write_text("\n".join(lines) + "\n", encoding="utf-8")

@@ -1,18 +1,18 @@
 README.md                                          |   4 +
- .../code/render_from_bundle.py                     |  55 ++++---
+ .../code/render_from_bundle.py                     |  47 +++---
  .../code/render_urgent_main_paper_figures.py       |  47 +++---
- .../figure2_bos_position_sweep.pdf                 | Bin 15195 -> 16799 bytes
- .../figure2_bos_position_sweep.png                 | Bin 107326 -> 110539 bytes
- .../figure3_bos_identity_controls.pdf              | Bin 14938 -> 14938 bytes
+ .../figure2_bos_position_sweep.pdf                 | Bin 16799 -> 16799 bytes
+ .../figure3_bos_identity_controls.pdf              | Bin 14938 -> 15103 bytes
+ .../figure3_bos_identity_controls.png              | Bin 115214 -> 116104 bytes
  .../figure7_toy_pretrained_bridge.pdf              | Bin 18949 -> 18949 bytes
  .../figure8_repeated_bos_prefix_attack.pdf         | Bin 23427 -> 23427 bytes
  .../figure9_frozen_selection_generalization.pdf    | Bin 19176 -> 19176 bytes
  outputs/preserved_main_paper_figures/manifest.md   |   5 +-
- .../provenance/README_reproducibility_addendum.md  |   4 +-
+ .../provenance/README_reproducibility_addendum.md  |   2 +-
  .../provenance/git_head.txt                        |   2 +-
- .../provenance/git_status_short.txt                |  15 +-
- .../tables/figure2_bos_position_sweep_exact.csv    |  16 +-
- .../tables/figure2_bos_position_sweep_exact.md     |  16 +-
+ .../provenance/git_status_short.txt                |   6 +-
+ .../tables/figure3_bos_identity_controls_exact.csv |  14 +-
+ .../tables/figure3_bos_identity_controls_exact.md  |  14 +-
  render_urgent_main_paper_figures.py                |  47 +++---
  requirements.txt                                   |   1 +
  run_relocation.py                                  |  63 ++++++-
@@ -23,4 +23,4 @@ README.md                                          |   4 +
  sink_neurons/selection.py                          |  12 ++
  sink_neurons/types.py                              |   1 +
  sweep_percentiles.py                               | 181 ++++++++++++++++++---
- 25 files changed, 561 insertions(+), 123 deletions(-)
+ 25 files changed, 534 insertions(+), 127 deletions(-)
