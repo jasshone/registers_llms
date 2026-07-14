@@ -1,0 +1,19 @@
+Script started on 2026-07-14 13:54:30+00:00 [TERM="screen" TTY="/dev/pts/4" COLUMNS="80" LINES="24"]
+[startup] importing torch
+[startup] importing sink_neurons.bias_transfer
+[startup] ensuring runtime imports
+[startup] configuring runtime
+[startup] loading model EleutherAI/pythia-1b
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|                                  | 0/196 [00:00<?, ?it/s]Loading weights:   1%|▏                         | 1/196 [00:01<04:11,  1.29s/it]Loading weights:   1%|▎                         | 2/196 [00:01<02:25,  1.33it/s]Loading weights:  19%|████▊                    | 38/196 [00:01<00:04, 37.28it/s]Loading weights:  28%|██████▉                  | 54/196 [00:02<00:04, 30.62it/s]Loading weights:  33%|████████▎                | 65/196 [00:02<00:04, 31.17it/s]Loading weights:  38%|█████████▍               | 74/196 [00:03<00:03, 31.52it/s]Loading weights:  43%|██████████▋              | 84/196 [00:03<00:02, 38.03it/s]Loading weights:  46%|███████████▌             | 91/196 [00:03<00:03, 31.45it/s]Loading weights:  49%|████████████▎            | 97/196 [00:03<00:03, 31.17it/s]Loading weights:  54%|████████████▊           | 105/196 [00:03<00:02, 37.73it/s]Loading weights:  57%|█████████████▌          | 111/196 [00:04<00:03, 25.45it/s]Loading weights:  59%|██████████████▏         | 116/196 [00:04<00:03, 24.34it/s]Loading weights:  67%|████████████████▏       | 132/196 [00:05<00:02, 26.80it/s]Loading weights:  74%|█████████████████▉      | 146/196 [00:05<00:01, 38.32it/s]Loading weights:  78%|██████████████████▋     | 153/196 [00:05<00:01, 28.98it/s]Loading weights:  83%|███████████████████▊    | 162/196 [00:05<00:01, 30.36it/s]Loading weights:  85%|████████████████████▍   | 167/196 [00:06<00:01, 25.73it/s]Loading weights:  89%|█████████████████████▎  | 174/196 [00:06<00:00, 26.33it/s]Loading weights:  98%|███████████████████████▌| 192/196 [00:06<00:00, 35.65it/s]Loading weights: 100%|████████████████████████| 196/196 [00:06<00:00, 28.70it/s]
+[startup] estimating selected bias
+[startup] estimating layer-matched random bias
+[done-condition] dummy_only: n=64
+[done-condition] source_subtract_only: n=64
+[done-condition] dummy_add_only: n=64
+[done-condition] full_transfer: n=64
+[done-condition] random_dummy_add_only: n=64
+[done-condition] random_full_transfer: n=64
+outputs/intervention_decomposition/pythia_1b_20260714_run2/aggregate_summary.md
+
+Script done on 2026-07-14 13:56:55+00:00 [COMMAND_EXIT_CODE="0"]
