@@ -1,0 +1,27 @@
+Script started on 2026-07-14 13:59:30+00:00 [TERM="screen" TTY="/dev/pts/4" COLUMNS="80" LINES="24"]
+[startup] importing torch
+[startup] importing sink_neurons.bias_transfer
+[startup] ensuring runtime imports
+[startup] configuring runtime
+[startup] loading model unsloth/Llama-3.2-3B
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+config.json:   0%|                                    | 0.00/890 [00:00<?, ?B/s]config.json: 100%|█████████████████████████████| 890/890 [00:00<00:00, 2.99MB/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+model.safetensors.index.json: 0.00B [00:00, ?B/s]model.safetensors.index.json: 20.9kB [00:00, 40.6MB/s]
+Downloading (incomplete total...): 0.00B [00:00, ?B/s]
+Fetching 2 files:   0%|                                   | 0/2 [00:00<?, ?it/s][ADownloading (incomplete total...):   0%|            | 0.00/4.97G [00:00<?, ?B/s]Downloading (incomplete total...):   0%|            | 0.00/6.43G [00:00<?, ?B/s]Downloading (incomplete total...):   0%|            | 0.00/6.43G [00:00<?, ?B/s]Downloading (incomplete total...):   2%|     | 134M/6.43G [00:01<00:58, 107MB/s]Downloading (incomplete total...):   4%|▏    | 268M/6.43G [00:01<00:30, 203MB/s]Downloading (incomplete total...):   6%|▎    | 369M/6.43G [00:02<00:24, 250MB/s]Downloading (incomplete total...):   7%|▎    | 436M/6.43G [00:02<00:29, 202MB/s]Downloading (incomplete total...):  10%|▍    | 637M/6.43G [00:02<00:17, 325MB/s]Downloading (incomplete total...):  11%|▌    | 704M/6.43G [00:02<00:18, 315MB/s]Downloading (incomplete total...):  14%|▋    | 905M/6.43G [00:03<00:15, 348MB/s]Downloading (incomplete total...):  16%|▋   | 1.04G/6.43G [00:03<00:13, 387MB/s]Downloading (incomplete total...):  18%|▋   | 1.17G/6.43G [00:04<00:15, 337MB/s]Downloading (incomplete total...):  22%|▊   | 1.41G/6.43G [00:04<00:10, 468MB/s]Downloading (incomplete total...):  24%|▉   | 1.54G/6.43G [00:04<00:10, 482MB/s]Downloading (incomplete total...):  27%|█   | 1.74G/6.43G [00:05<00:10, 452MB/s]Downloading (incomplete total...):  34%|█▍  | 2.21G/6.43G [00:06<00:10, 407MB/s]Downloading (incomplete total...):  39%|█▌  | 2.48G/6.43G [00:07<00:10, 390MB/s]Downloading (incomplete total...):  44%|█▊  | 2.83G/6.43G [00:10<00:17, 211MB/s]Downloading (incomplete total...):  52%|██  | 3.37G/6.43G [00:10<00:09, 307MB/s]Downloading (incomplete total...):  69%|██▊ | 4.44G/6.43G [00:15<00:07, 256MB/s]Downloading (incomplete total...):  89%|███▌| 5.75G/6.43G [00:21<00:02, 241MB/s]Downloading (incomplete total...): 100%|████| 6.43G/6.43G [00:24<00:00, 242MB/s]
+Fetching 2 files:  50%|█████████████▌             | 1/2 [00:25<00:25, 25.13s/it][AFetching 2 files: 100%|███████████████████████████| 2/2 [00:25<00:00, 12.57s/it]
+Download complete: 100%|████████████████████| 6.43G/6.43G [00:25<00:00, 242MB/s]Download complete: 100%|████████████████████| 6.43G/6.43G [00:25<00:00, 255MB/s]
+Loading weights:   0%|                                  | 0/254 [00:00<?, ?it/s]Loading weights:   2%|▍                         | 4/254 [00:00<00:06, 36.45it/s]Loading weights:  10%|██▍                     | 26/254 [00:00<00:01, 139.09it/s]Loading weights:  21%|█████                   | 53/254 [00:00<00:01, 194.52it/s]Loading weights:  30%|███████▎                | 77/254 [00:00<00:00, 210.80it/s]Loading weights:  40%|█████████▏             | 102/254 [00:00<00:00, 218.37it/s]Loading weights:  49%|███████████▏           | 124/254 [00:00<00:00, 202.81it/s]Loading weights:  57%|█████████████▏         | 145/254 [00:00<00:00, 200.40it/s]Loading weights:  65%|███████████████        | 166/254 [00:00<00:00, 190.80it/s]Loading weights:  76%|█████████████████▍     | 192/254 [00:00<00:00, 207.98it/s]Loading weights:  84%|███████████████████▍   | 214/254 [00:01<00:00, 208.40it/s]Loading weights:  93%|█████████████████████▎ | 235/254 [00:01<00:00, 205.94it/s]Loading weights: 100%|███████████████████████| 254/254 [00:01<00:00, 199.22it/s]
+generation_config.json:   0%|                         | 0.00/230 [00:00<?, ?B/s]generation_config.json: 100%|██████████████████| 230/230 [00:00<00:00, 1.08MB/s]
+[startup] estimating selected bias
+[startup] estimating layer-matched random bias
+[done-condition] dummy_only: n=64
+[done-condition] source_subtract_only: n=64
+[done-condition] dummy_add_only: n=64
+[done-condition] full_transfer: n=64
+[done-condition] random_dummy_add_only: n=64
+[done-condition] random_full_transfer: n=64
+outputs/intervention_decomposition/llama3_2_3b_20260714/aggregate_summary.md
+
+Script done on 2026-07-14 14:01:56+00:00 [COMMAND_EXIT_CODE="0"]
