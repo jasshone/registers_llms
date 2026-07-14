@@ -1,0 +1,16 @@
+{
+  "model_id": "mistralai/Mistral-7B-v0.1",
+  "selection": "outputs/intervention_decomposition/mistral_7b_v0_1_20260714_run3/selected_neurons.pt",
+  "windows": "outputs/final_split_bias_transfer_source_abs_bonus0_official_scope/mistral_7b_v0_1/windows_192x1024.pt",
+  "num_windows": 192,
+  "batch_size": 1,
+  "counts": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "scale": 4.0,
+  "random_controls": 1,
+  "seed": 0
+}

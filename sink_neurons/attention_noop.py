@@ -374,6 +374,7 @@ def _patched_eager_attention(state: _AttentionPatchState) -> Callable:
 def patched_eager_attention(state: _AttentionPatchState) -> Iterator[None]:
     module_names = [
         "transformers.models.llama.modeling_llama",
+        "transformers.models.mistral.modeling_mistral",
         "transformers.models.gpt_neox.modeling_gpt_neox",
         "transformers.models.qwen2.modeling_qwen2",
         "transformers.models.qwen3.modeling_qwen3",

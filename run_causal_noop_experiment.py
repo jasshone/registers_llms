@@ -45,6 +45,7 @@ MODEL_IDS = {
     "pythia_1b": "EleutherAI/pythia-1b",
     "llama3_2_3b": "unsloth/Llama-3.2-3B",
     "qwen3_4b": "Qwen/Qwen3-4B",
+    "mistral_7b_v0_1": "mistralai/Mistral-7B-v0.1",
 }
 
 DATASET_SPLITS = {

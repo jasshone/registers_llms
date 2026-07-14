@@ -24,7 +24,7 @@ print("[startup] importing sink_neurons.bias_transfer", flush=True)
 import sink_neurons.bias_transfer as bt
 
 
-MODEL_KEYS = ("pythia_1b", "llama3_2_3b", "qwen3_4b")
+MODEL_KEYS = ("pythia_1b", "llama3_2_3b", "qwen3_4b", "mistral_7b_v0_1")
 CONDITIONS = (
     ("dummy_only", "selected", None),
     ("source_subtract_only", "selected", "subtract_only"),
