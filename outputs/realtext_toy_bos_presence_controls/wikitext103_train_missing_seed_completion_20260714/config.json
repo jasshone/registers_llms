@@ -1,0 +1,90 @@
+{
+  "args": {
+    "token_cache": "outputs/realtext_toy_data/wikitext103_train10m_pythia70m_tokens.pt",
+    "out": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714",
+    "variants": [
+      "no_bos",
+      "single_8",
+      "single_32",
+      "duplicate_0,8",
+      "duplicate_0,32"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "max_tokens": null,
+    "steps": 10000,
+    "batch_size": 64,
+    "eval_batch_size": 128,
+    "eval_interval": 1000,
+    "eval_split": "val",
+    "seq_len": 128,
+    "n_layer": 4,
+    "n_head": 4,
+    "d_model": 128,
+    "d_mlp": 512,
+    "lr": 0.0003,
+    "weight_decay": 0.1,
+    "device": "cuda"
+  },
+  "model": {
+    "vocab_size": 50277,
+    "bos_token_id": 0,
+    "seq_len": 128,
+    "n_layer": 4,
+    "n_head": 4,
+    "d_model": 128,
+    "d_mlp": 512,
+    "dropout": 0.0
+  },
+  "metadata": {
+    "dataset": "Salesforce/wikitext",
+    "config": "wikitext-103-raw-v1",
+    "split": "train",
+    "max_chars": 10000000,
+    "actual_chars": 10000000,
+    "nonempty_rows_seen": 21743,
+    "tokenizer_model_id": "EleutherAI/pythia-70m",
+    "vocab_size": 50277,
+    "bos_token_id": 0,
+    "tokens_used": 2205403
+  },
+  "split_tokens": {
+    "train": 1984862,
+    "val": 110270,
+    "test": 110271
+  },
+  "variants": [
+    {
+      "name": "no_bos",
+      "bos_positions": []
+    },
+    {
+      "name": "single_8",
+      "bos_positions": [
+        8
+      ]
+    },
+    {
+      "name": "single_32",
+      "bos_positions": [
+        32
+      ]
+    },
+    {
+      "name": "duplicate_0,8",
+      "bos_positions": [
+        0,
+        8
+      ]
+    },
+    {
+      "name": "duplicate_0,32",
+      "bos_positions": [
+        0,
+        32
+      ]
+    }
+  ]
+}

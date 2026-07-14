@@ -1,0 +1,92 @@
+[
+  {
+    "variant": "single_0",
+    "seed": 0,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_3seed/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "single_0",
+    "seed": 1,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_3seed/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "single_0",
+    "seed": 2,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714_single0_seed2/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "no_bos",
+    "seed": 0,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_3seed/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "no_bos",
+    "seed": 1,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "no_bos",
+    "seed": 2,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "single_8",
+    "seed": 0,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_3seed/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "single_8",
+    "seed": 1,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "single_8",
+    "seed": 2,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714_resume2/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "single_32",
+    "seed": 0,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_3seed/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "single_32",
+    "seed": 1,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "single_32",
+    "seed": 2,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714_resume2/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "duplicate_0,8",
+    "seed": 0,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_3seed/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "duplicate_0,8",
+    "seed": 1,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "duplicate_0,8",
+    "seed": 2,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714_resume2/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "duplicate_0,32",
+    "seed": 0,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_3seed/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "duplicate_0,32",
+    "seed": 1,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714/final_rows_by_seed.csv"
+  },
+  {
+    "variant": "duplicate_0,32",
+    "seed": 2,
+    "source": "outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714_resume2/final_rows_by_seed.csv"
+  }
+]

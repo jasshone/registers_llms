@@ -1,0 +1,15 @@
+Script started on 2026-07-14 13:18:12+00:00 [<not executed on terminal>]
+[single_0] step=0 loss=10.8457 pos0=0.0349 ctrl=0.0311 bos_sum=0.0349
+[single_0] step=1000 loss=6.1027 pos0=0.0398 ctrl=0.0242 bos_sum=0.0398
+[single_0] step=2000 loss=5.8131 pos0=0.0465 ctrl=0.0197 bos_sum=0.0465
+[single_0] step=3000 loss=5.7376 pos0=0.0541 ctrl=0.0176 bos_sum=0.0541
+[single_0] step=4000 loss=5.7334 pos0=0.0646 ctrl=0.0163 bos_sum=0.0646
+[single_0] step=5000 loss=5.7834 pos0=0.0691 ctrl=0.0159 bos_sum=0.0691
+[single_0] step=6000 loss=5.8619 pos0=0.0752 ctrl=0.0153 bos_sum=0.0752
+[single_0] step=7000 loss=5.9844 pos0=0.0790 ctrl=0.0146 bos_sum=0.0790
+[single_0] step=8000 loss=6.0841 pos0=0.0813 ctrl=0.0144 bos_sum=0.0813
+[single_0] step=9000 loss=6.1684 pos0=0.0818 ctrl=0.0143 bos_sum=0.0818
+[single_0] step=10000 loss=6.3015 pos0=0.0832 ctrl=0.0138 bos_sum=0.0832
+outputs/realtext_toy_bos_presence_controls/wikitext103_train_missing_seed_completion_20260714_single0_seed2/aggregate_summary.md
+
+Script done on 2026-07-14 13:27:39+00:00 [COMMAND_EXIT_CODE="0"]
