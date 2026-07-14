@@ -1,0 +1,27 @@
+Script started on 2026-07-14 14:03:29+00:00 [TERM="screen" TTY="/dev/pts/4" COLUMNS="80" LINES="24"]
+[startup] importing torch
+[startup] importing sink_neurons.bias_transfer
+[startup] ensuring runtime imports
+[startup] configuring runtime
+[startup] loading model Qwen/Qwen3-4B
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+config.json:   0%|                                    | 0.00/726 [00:00<?, ?B/s]config.json: 100%|█████████████████████████████| 726/726 [00:00<00:00, 2.68MB/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+model.safetensors.index.json: 0.00B [00:00, ?B/s]model.safetensors.index.json: 32.8kB [00:00, 58.8MB/s]
+Downloading (incomplete total...): 0.00B [00:00, ?B/s]
+Fetching 3 files:   0%|                                   | 0/3 [00:00<?, ?it/s][ADownloading (incomplete total...):   0%|            | 0.00/3.96G [00:00<?, ?B/s]Downloading (incomplete total...):   0%|            | 0.00/4.06G [00:00<?, ?B/s]Downloading (incomplete total...):   0%|            | 0.00/8.04G [00:00<?, ?B/s]Downloading (incomplete total...):   0%|            | 0.00/8.04G [00:00<?, ?B/s]Downloading (incomplete total...):   0%| | 39.5k/8.04G [00:00<42:23:10, 52.7kB/sDownloading (incomplete total...):   1%|   | 65.3M/8.04G [00:01<01:38, 81.3MB/s]Downloading (incomplete total...):   2%|     | 132M/8.04G [00:01<00:57, 139MB/s]Downloading (incomplete total...):   3%|▏    | 266M/8.04G [00:01<00:30, 258MB/s]Downloading (incomplete total...):   4%|▏    | 333M/8.04G [00:02<00:37, 207MB/s]Downloading (incomplete total...):   6%|▎    | 522M/8.04G [00:02<00:27, 277MB/s]Downloading (incomplete total...):   8%|▍    | 622M/8.04G [00:02<00:25, 297MB/s]Downloading (incomplete total...):   9%|▍    | 701M/8.04G [00:03<00:29, 249MB/s]Downloading (incomplete total...):  13%|▌   | 1.04G/8.04G [00:03<00:14, 476MB/s]Downloading (incomplete total...):  15%|▌   | 1.24G/8.04G [00:04<00:15, 448MB/s]Downloading (incomplete total...):  16%|▋   | 1.30G/8.04G [00:05<00:26, 254MB/s]Downloading (incomplete total...):  22%|▉   | 1.77G/8.04G [00:07<00:29, 209MB/s]Downloading (incomplete total...):  25%|█   | 2.05G/8.04G [00:10<00:37, 161MB/s]Downloading (incomplete total...):  35%|█▍  | 2.85G/8.04G [00:10<00:16, 318MB/s]Downloading (incomplete total...):  40%|█▌  | 3.18G/8.04G [00:12<00:18, 257MB/s]Downloading (incomplete total...):  41%|█▋  | 3.32G/8.04G [00:14<00:21, 218MB/s]Downloading (incomplete total...):  42%|█▋  | 3.38G/8.04G [00:14<00:22, 207MB/s]Downloading (incomplete total...):  49%|█▉  | 3.92G/8.04G [00:15<00:13, 298MB/s]Downloading (incomplete total...):  53%|██  | 4.26G/8.04G [00:17<00:15, 240MB/s]Downloading (incomplete total...):  60%|██▍ | 4.79G/8.04G [00:20<00:14, 220MB/s]Downloading (incomplete total...):  66%|██▋ | 5.34G/8.04G [00:22<00:11, 236MB/s]Downloading (incomplete total...):  73%|██▉ | 5.87G/8.04G [00:24<00:09, 229MB/s]Downloading (incomplete total...):  80%|███▏| 6.40G/8.04G [00:26<00:06, 238MB/s]Downloading (incomplete total...):  86%|███▍| 6.95G/8.04G [00:30<00:05, 211MB/s]Downloading (incomplete total...):  92%|███▋| 7.39G/8.04G [00:30<00:02, 264MB/s]Downloading (incomplete total...):  98%|███▉| 7.91G/8.04G [00:32<00:00, 264MB/s]Downloading (incomplete total...): 100%|████| 8.04G/8.04G [00:33<00:00, 264MB/s]
+Fetching 3 files:  33%|█████████                  | 1/3 [00:34<01:08, 34.30s/it][AFetching 3 files: 100%|███████████████████████████| 3/3 [00:34<00:00, 11.43s/it]
+Download complete: 100%|████████████████████| 8.04G/8.04G [00:34<00:00, 264MB/s]Download complete: 100%|████████████████████| 8.04G/8.04G [00:34<00:00, 234MB/s]
+Loading weights:   0%|                                  | 0/398 [00:00<?, ?it/s]Loading weights:   4%|▉                       | 16/398 [00:00<00:02, 152.91it/s]Loading weights:  12%|██▉                     | 49/398 [00:00<00:01, 250.51it/s]Loading weights:  21%|████▉                   | 82/398 [00:00<00:01, 282.41it/s]Loading weights:  29%|██████▋                | 115/398 [00:00<00:00, 298.98it/s]Loading weights:  37%|████████▌              | 148/398 [00:00<00:00, 309.71it/s]Loading weights:  45%|██████████▍            | 181/398 [00:00<00:00, 312.21it/s]Loading weights:  54%|████████████▎          | 213/398 [00:00<00:00, 305.99it/s]Loading weights:  62%|██████████████▏        | 246/398 [00:00<00:00, 305.34it/s]Loading weights:  70%|████████████████       | 279/398 [00:00<00:00, 302.14it/s]Loading weights:  78%|██████████████████     | 312/398 [00:01<00:00, 307.08it/s]Loading weights:  87%|███████████████████▉   | 345/398 [00:01<00:00, 312.04it/s]Loading weights:  95%|█████████████████████▊ | 378/398 [00:01<00:00, 316.71it/s]Loading weights: 100%|███████████████████████| 398/398 [00:01<00:00, 305.01it/s]
+generation_config.json:   0%|                         | 0.00/239 [00:00<?, ?B/s]generation_config.json: 100%|██████████████████| 239/239 [00:00<00:00, 1.06MB/s]
+[startup] estimating selected bias
+[startup] estimating layer-matched random bias
+[done-condition] dummy_only: n=64
+[done-condition] source_subtract_only: n=64
+[done-condition] dummy_add_only: n=64
+[done-condition] full_transfer: n=64
+[done-condition] random_dummy_add_only: n=64
+[done-condition] random_full_transfer: n=64
+outputs/intervention_decomposition/qwen3_4b_20260714/aggregate_summary.md
+
+Script done on 2026-07-14 14:06:45+00:00 [COMMAND_EXIT_CODE="0"]
