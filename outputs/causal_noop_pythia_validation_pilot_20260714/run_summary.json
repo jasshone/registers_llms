@@ -1,0 +1,358 @@
+{
+  "rows": [
+    {
+      "bootstrap": [
+        {
+          "ci_high": 0.00026237180846111485,
+          "ci_low": 8.365201421689505e-05,
+          "control_kind": "early",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.640625,
+          "head_kind": "low_sink",
+          "layer_band": "all",
+          "mean_control_minus_sink_correct_prob": -0.000610966302417637,
+          "mean_control_minus_sink_logit_l2": 1.2050012089312077,
+          "mean_control_minus_sink_loss": 0.0017117943934863433,
+          "mean_paired_difference": 0.00016894839970627018,
+          "num_sequences": 128.0
+        },
+        {
+          "ci_high": 0.00017719419487649546,
+          "ci_low": -4.649635932207907e-05,
+          "control_kind": "random",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.578125,
+          "head_kind": "low_sink",
+          "layer_band": "all",
+          "mean_control_minus_sink_correct_prob": -0.0013786448203951807,
+          "mean_control_minus_sink_logit_l2": 0.682609586045146,
+          "mean_control_minus_sink_loss": 0.004151427663600771,
+          "mean_paired_difference": 7.144900297606505e-05,
+          "num_sequences": 128.0
+        },
+        {
+          "ci_high": 0.0005122810932031522,
+          "ci_low": -0.0001590438284135113,
+          "control_kind": "early",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.5,
+          "head_kind": "low_sink",
+          "layer_band": "early",
+          "mean_control_minus_sink_correct_prob": 0.0010449299588799477,
+          "mean_control_minus_sink_logit_l2": -2.13971217473348,
+          "mean_control_minus_sink_loss": -0.015137514720360437,
+          "mean_paired_difference": 0.00012259169792135557,
+          "num_sequences": 6.0
+        },
+        {
+          "ci_high": 0.0003023210253256063,
+          "ci_low": -0.00031498141955429065,
+          "control_kind": "random",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.3333333333333333,
+          "head_kind": "low_sink",
+          "layer_band": "early",
+          "mean_control_minus_sink_correct_prob": 0.0009825547846655052,
+          "mean_control_minus_sink_logit_l2": -3.61390487353007,
+          "mean_control_minus_sink_loss": 0.004180531948804855,
+          "mean_paired_difference": -2.2133341796385746e-05,
+          "num_sequences": 6.0
+        },
+        {
+          "ci_high": 0.0003552843425681307,
+          "ci_low": 8.833875041476904e-05,
+          "control_kind": "early",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.6582278481012658,
+          "head_kind": "low_sink",
+          "layer_band": "late",
+          "mean_control_minus_sink_correct_prob": -0.0012211027091716805,
+          "mean_control_minus_sink_logit_l2": 1.5844616799414912,
+          "mean_control_minus_sink_loss": 0.005304591535720267,
+          "mean_paired_difference": 0.0002158896705814589,
+          "num_sequences": 79.0
+        },
+        {
+          "ci_high": 0.0002563046114370899,
+          "ci_low": -7.079623421155196e-05,
+          "control_kind": "random",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.6075949367088608,
+          "head_kind": "low_sink",
+          "layer_band": "late",
+          "mean_control_minus_sink_correct_prob": -0.0020964868939918695,
+          "mean_control_minus_sink_logit_l2": 1.0092559705806683,
+          "mean_control_minus_sink_loss": 0.008733242128303722,
+          "mean_paired_difference": 8.811024522358395e-05,
+          "num_sequences": 79.0
+        },
+        {
+          "ci_high": 0.00015547044788649525,
+          "ci_low": 3.117416512459174e-05,
+          "control_kind": "early",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.627906976744186,
+          "head_kind": "low_sink",
+          "layer_band": "middle",
+          "mean_control_minus_sink_correct_prob": 0.00027892668748431473,
+          "mean_control_minus_sink_logit_l2": 0.9745570947957594,
+          "mean_control_minus_sink_loss": -0.0025378595496159655,
+          "mean_paired_difference": 8.917583718463246e-05,
+          "num_sequences": 43.0
+        },
+        {
+          "ci_high": 0.00016403282533310418,
+          "ci_low": -4.834189562405638e-05,
+          "control_kind": "random",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.5581395348837209,
+          "head_kind": "low_sink",
+          "layer_band": "middle",
+          "mean_control_minus_sink_correct_prob": -0.00038928839751670874,
+          "mean_control_minus_sink_logit_l2": 0.6820054553275885,
+          "mean_control_minus_sink_loss": -0.004270385555533129,
+          "mean_paired_difference": 5.389681532677926e-05,
+          "num_sequences": 43.0
+        },
+        {
+          "ci_high": 0.0003130097041853247,
+          "ci_low": 4.444485928204058e-05,
+          "control_kind": "early",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.6320754716981132,
+          "head_kind": "sink_heavy",
+          "layer_band": "all",
+          "mean_control_minus_sink_correct_prob": 0.0008067869989559458,
+          "mean_control_minus_sink_logit_l2": 2.409336175558702,
+          "mean_control_minus_sink_loss": 0.0031854150408246328,
+          "mean_paired_difference": 0.00016393227060732142,
+          "num_sequences": 106.0
+        },
+        {
+          "ci_high": 0.00031889437766754753,
+          "ci_low": 6.736980475888797e-05,
+          "control_kind": "random",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.7075471698113207,
+          "head_kind": "sink_heavy",
+          "layer_band": "all",
+          "mean_control_minus_sink_correct_prob": -0.0005810107163854826,
+          "mean_control_minus_sink_logit_l2": 2.115959050520411,
+          "mean_control_minus_sink_loss": 0.004165268933646522,
+          "mean_paired_difference": 0.00018865822680840628,
+          "num_sequences": 106.0
+        },
+        {
+          "ci_high": 0.00011688622907968238,
+          "ci_low": -0.0002558621345087886,
+          "control_kind": "early",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.5,
+          "head_kind": "sink_heavy",
+          "layer_band": "early",
+          "mean_control_minus_sink_correct_prob": -0.0046280790120363235,
+          "mean_control_minus_sink_logit_l2": 2.1714216470718384,
+          "mean_control_minus_sink_loss": 0.006332959979772568,
+          "mean_paired_difference": -5.851784590049647e-05,
+          "num_sequences": 4.0
+        },
+        {
+          "ci_high": 0.0006647960399277508,
+          "ci_low": -0.0013751394544669893,
+          "control_kind": "random",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.5,
+          "head_kind": "sink_heavy",
+          "layer_band": "early",
+          "mean_control_minus_sink_correct_prob": -0.009668570128269494,
+          "mean_control_minus_sink_logit_l2": 0.8625761270523071,
+          "mean_control_minus_sink_loss": 0.01867812965065241,
+          "mean_paired_difference": -0.00029264139811857603,
+          "num_sequences": 4.0
+        },
+        {
+          "ci_high": 0.0004904020125774299,
+          "ci_low": 6.426967420545473e-05,
+          "control_kind": "early",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.7121212121212122,
+          "head_kind": "sink_heavy",
+          "layer_band": "late",
+          "mean_control_minus_sink_correct_prob": 0.0009895410134270082,
+          "mean_control_minus_sink_logit_l2": 3.2225572087548,
+          "mean_control_minus_sink_loss": 0.0018785963272393653,
+          "mean_paired_difference": 0.0002516325868996181,
+          "num_sequences": 66.0
+        },
+        {
+          "ci_high": 0.00044199565595728484,
+          "ci_low": 0.0001139426614661881,
+          "control_kind": "random",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.7878787878787878,
+          "head_kind": "sink_heavy",
+          "layer_band": "late",
+          "mean_control_minus_sink_correct_prob": -0.00011901223197955088,
+          "mean_control_minus_sink_logit_l2": 2.86735086368792,
+          "mean_control_minus_sink_loss": 0.0026498687009073115,
+          "mean_paired_difference": 0.0002650829803976442,
+          "num_sequences": 66.0
+        },
+        {
+          "ci_high": 0.00013969394031695023,
+          "ci_low": -6.0406314787542215e-05,
+          "control_kind": "early",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.5,
+          "head_kind": "sink_heavy",
+          "layer_band": "middle",
+          "mean_control_minus_sink_correct_prob": 0.0010756119736470282,
+          "mean_control_minus_sink_logit_l2": 0.9448658956421746,
+          "mean_control_minus_sink_loss": 0.00523152213362563,
+          "mean_paired_difference": 2.7865037016757317e-05,
+          "num_sequences": 36.0
+        },
+        {
+          "ci_high": 0.0002738379816820371,
+          "ci_low": -6.044164790116232e-05,
+          "control_kind": "random",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 0.5833333333333334,
+          "head_kind": "sink_heavy",
+          "layer_band": "middle",
+          "mean_control_minus_sink_correct_prob": -0.00041827911425368965,
+          "mean_control_minus_sink_logit_l2": 0.8776721623208787,
+          "mean_control_minus_sink_loss": 0.005330962614001085,
+          "mean_paired_difference": 0.00010202391466446809,
+          "num_sequences": 36.0
+        }
+      ],
+      "dataset": "wikitext_test",
+      "delta_pilot_summary": [],
+      "model_id": "EleutherAI/pythia-1b",
+      "model_key": "pythia_1b",
+      "secondary_paired_summary": [
+        {
+          "ci_high": 0.004955013629114546,
+          "ci_low": 0.004397653920932498,
+          "control_kind": "early",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 1.0,
+          "mean_control_minus_sink_kl": 0.004671673678785737,
+          "mean_control_minus_sink_logit_l2": 21.45574141293764,
+          "mean_control_minus_sink_loss": 0.0059689682595376325,
+          "num_sequences": 128.0
+        },
+        {
+          "ci_high": 0.00407133820681338,
+          "ci_low": 0.0036964128357794834,
+          "control_kind": "random",
+          "delta": 0.05,
+          "fraction_sink_less_disruptive": 1.0,
+          "mean_control_minus_sink_kl": 0.003872269934618089,
+          "mean_control_minus_sink_logit_l2": 17.76317571848631,
+          "mean_control_minus_sink_loss": 0.005040896756781876,
+          "num_sequences": 128.0
+        }
+      ],
+      "secondary_summary": [
+        {
+          "applied_sites": 489471,
+          "delta": 0.05,
+          "mean_delta_loss": 0.005999443386087933,
+          "mean_kl": 0.006761790893506259,
+          "mean_logit_l2": 38.30224448442459,
+          "num_sequences": 128,
+          "skipped_sites": 1,
+          "target_kind": "early"
+        },
+        {
+          "applied_sites": 489469,
+          "delta": 0.05,
+          "mean_delta_loss": 0.005071371883332176,
+          "mean_kl": 0.0059623871493386105,
+          "mean_logit_l2": 34.60967878997326,
+          "num_sequences": 128,
+          "skipped_sites": 3,
+          "target_kind": "random"
+        },
+        {
+          "applied_sites": 432711,
+          "delta": 0.05,
+          "mean_delta_loss": 3.0475126550300047e-05,
+          "mean_kl": 0.0020901172147205216,
+          "mean_logit_l2": 16.84650307148695,
+          "num_sequences": 128,
+          "skipped_sites": 56761,
+          "target_kind": "sink"
+        }
+      ],
+      "sink_position": 0,
+      "status": "ok",
+      "value_paired_summary": [
+        {
+          "ci_high": 0.10648418281648375,
+          "ci_low": 0.062268075487132535,
+          "control_kind": "random",
+          "fraction_ordinary_at_sink_more_disruptive": 0.9921875,
+          "layer_band": "all",
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_kl": 0.08378196372001057,
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_logit_l2": 110.12670124322176,
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_loss": 0.09042106153719942,
+          "num_sequences": 128.0
+        },
+        {
+          "ci_high": 0.05279254063498229,
+          "ci_low": 0.018458821868989617,
+          "control_kind": "random",
+          "fraction_ordinary_at_sink_more_disruptive": 1.0,
+          "layer_band": "early",
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_kl": 0.034105357772205025,
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_logit_l2": 97.77198147773743,
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_loss": -0.13999651620785394,
+          "num_sequences": 6.0
+        },
+        {
+          "ci_high": 0.12893900406482006,
+          "ci_low": 0.06329120097211384,
+          "control_kind": "random",
+          "fraction_ordinary_at_sink_more_disruptive": 1.0,
+          "layer_band": "late",
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_kl": 0.092779147540459,
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_logit_l2": 115.82658188856101,
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_loss": 0.11202790769689445,
+          "num_sequences": 79.0
+        },
+        {
+          "ci_high": 0.10622109549286654,
+          "ci_low": 0.05108422081756607,
+          "control_kind": "random",
+          "fraction_ordinary_at_sink_more_disruptive": 0.9767441860465116,
+          "layer_band": "middle",
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_kl": 0.074183873344927,
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_logit_l2": 101.37874188534049,
+          "mean_ordinary_at_sink_minus_sink_at_ordinary_loss": 0.08287605269660436,
+          "num_sequences": 43.0
+        }
+      ],
+      "value_summary": [
+        {
+          "control_kind": "random",
+          "intervention_kind": "ordinary_value_at_sink",
+          "mean_delta_loss": 0.09083074868794938,
+          "mean_kl": 0.08406782435992,
+          "mean_logit_l2": 114.46719548106194,
+          "num_sites": 128
+        },
+        {
+          "control_kind": "random",
+          "intervention_kind": "sink_value_at_ordinary",
+          "mean_delta_loss": 0.00040968715074996,
+          "mean_kl": 0.0002858606399094299,
+          "mean_logit_l2": 4.340494237840176,
+          "num_sites": 128
+        }
+      ]
+    }
+  ]
+}
