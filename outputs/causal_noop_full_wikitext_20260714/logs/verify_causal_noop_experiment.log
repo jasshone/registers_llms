@@ -1,0 +1,7 @@
+Script started on 2026-07-14 15:54:31+00:00 [<not executed on terminal>]
+llama: sink_position=6 single_l2=0.0036059 value_l2=0.0257452 secondary_sites=14/14
+gpt_neox: sink_position=1 single_l2=0.00417302 value_l2=0.0202905 secondary_sites=14/14
+qwen3: sink_position=11 single_l2=0.0101191 value_l2=0.0208743 secondary_sites=14/14
+causal noop verifier passed
+
+Script done on 2026-07-14 15:55:58+00:00 [COMMAND_EXIT_CODE="0"]

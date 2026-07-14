@@ -1,0 +1,8 @@
+Script started on 2026-07-14 15:30:18+00:00 [<not executed on terminal>]
+[load] llama3_2_3b unsloth/Llama-3.2-3B
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0% 0/254 [00:00<?, ?it/s]Loading weights:   1% 3/254 [00:00<00:08, 29.67it/s]Loading weights:   9% 23/254 [00:00<00:01, 123.27it/s]Loading weights:  20% 50/254 [00:00<00:01, 186.38it/s]Loading weights:  30% 77/254 [00:00<00:00, 214.86it/s]Loading weights:  40% 102/254 [00:00<00:00, 223.25it/s]Loading weights:  49% 125/254 [00:00<00:00, 206.64it/s]Loading weights:  57% 146/254 [00:00<00:00, 205.09it/s]Loading weights:  66% 167/254 [00:00<00:00, 187.27it/s]Loading weights:  76% 194/254 [00:00<00:00, 206.31it/s]Loading weights:  86% 219/254 [00:01<00:00, 213.65it/s]Loading weights:  95% 241/254 [00:01<00:00, 212.44it/s]Loading weights: 100% 254/254 [00:01<00:00, 200.78it/s]
+outputs/causal_noop_full_wikitext_20260714/causal_noop_experiment.md
+
+Script done on 2026-07-14 15:36:59+00:00 [COMMAND_EXIT_CODE="0"]
