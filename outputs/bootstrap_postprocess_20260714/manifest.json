@@ -1,0 +1,20 @@
+{
+  "seed": 17,
+  "samples": 10000,
+  "git_head": "a148f18cd74189c3ad54c3943027295524248ba2",
+  "sources": {
+    "intervention_decomposition": {
+      "pythia_1b": "outputs/intervention_decomposition/pythia_1b_20260714_run2/per_example.csv",
+      "llama3_2_3b": "outputs/intervention_decomposition/llama3_2_3b_20260714/per_example.csv",
+      "qwen3_4b": "outputs/intervention_decomposition/qwen3_4b_20260714/per_example.csv"
+    },
+    "toy_bridge": "outputs/preserved_main_paper_figures/sources/figure7_toy_relocation_bridge_metrics.csv",
+    "aggregate_only": {
+      "pile": "outputs/preserved_main_paper_figures/sources/figure9_pile_summary_shards.csv",
+      "mmlu": "outputs/preserved_main_paper_figures/sources/figure9_mmlu_summary.csv",
+      "repeated_bos_pythia_1b": "outputs/preserved_main_paper_figures/sources/figure8_repeated_bos_prefix_metrics.csv",
+      "repeated_bos_llama3_2_3b": "outputs/sink_hijacking_attack/repeated_bos_prefix/llama3_2_3b_20260714/repeated_bos_prefix_metrics.csv",
+      "repeated_bos_qwen3_4b": "outputs/sink_hijacking_attack/repeated_bos_prefix/qwen3_4b_20260714/repeated_bos_prefix_metrics.csv"
+    }
+  }
+}
