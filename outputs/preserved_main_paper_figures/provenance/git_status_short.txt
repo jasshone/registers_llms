@@ -1,4 +1,18 @@
 M README.md
+ M outputs/preserved_main_paper_figures/code/render_from_bundle.py
+ M outputs/preserved_main_paper_figures/code/render_urgent_main_paper_figures.py
+ M outputs/preserved_main_paper_figures/figure2_bos_position_sweep.pdf
+ M outputs/preserved_main_paper_figures/figure2_bos_position_sweep.png
+ M outputs/preserved_main_paper_figures/figure3_bos_identity_controls.pdf
+ M outputs/preserved_main_paper_figures/figure7_toy_pretrained_bridge.pdf
+ M outputs/preserved_main_paper_figures/figure8_repeated_bos_prefix_attack.pdf
+ M outputs/preserved_main_paper_figures/figure9_frozen_selection_generalization.pdf
+ M outputs/preserved_main_paper_figures/manifest.md
+ M outputs/preserved_main_paper_figures/provenance/README_reproducibility_addendum.md
+ M outputs/preserved_main_paper_figures/provenance/git_head.txt
+ M outputs/preserved_main_paper_figures/tables/figure2_bos_position_sweep_exact.csv
+ M outputs/preserved_main_paper_figures/tables/figure2_bos_position_sweep_exact.md
+ M render_urgent_main_paper_figures.py
  M requirements.txt
  M run_relocation.py
  M select_bos_neurons.py
@@ -52,7 +66,6 @@ M README.md
 ?? plot_llama_bos_vs_sinks_bias.py
 ?? plot_mean_bias_distribution.py
 ?? prepare_wikitext_train_tokens.py
-?? render_urgent_main_paper_figures.py
 ?? run_active_only_multisource_transfer.py
 ?? run_all_zero_source_only_ablation.py
 ?? run_attention_bos_direction_diagnostic.py

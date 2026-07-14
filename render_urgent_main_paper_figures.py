@@ -15,6 +15,10 @@ TABLE_DIR = OUT_DIR / "tables"
 
 SOURCES = {
     "figure2": Path(
+        "outputs/realtext_toy_shifted_bos_gradients/"
+        "wikitext103_train_expanded_3seed/aggregate_gradient_summary.csv"
+    ),
+    "figure2_cached_reference": Path(
         "outputs/realtext_toy_bos_train_position/"
         "wikitext_pythia_cached_val_windows/bos_train_position_summary.csv"
     ),
@@ -101,37 +105,42 @@ def write_table(df: pd.DataFrame, stem: str) -> None:
 
 
 def fig2_bos_position_sweep() -> None:
-    df = pd.read_csv(SOURCES["figure2"]).sort_values("bos_position")
-    write_table(
-        df[
-            [
-                "bos_position",
-                "step",
-                "loss",
-                "ppl",
-                "pos0_attention_mean",
-                "bos_position_attention_mean",
-                "next_position_attention_mean",
-                "bos_minus_pos0_attention",
-                "bos_minus_next_attention",
-            ]
-        ],
-        "figure2_bos_position_sweep_exact",
+    raw = pd.read_csv(SOURCES["figure2"]).copy()
+    raw = raw[raw["variant"].astype(str).str.startswith("single_")].copy()
+    raw["bos_position"] = raw["bos_positions"].astype(int)
+    raw = raw.sort_values("bos_position")
+    df = pd.DataFrame(
+        {
+            "bos_position": raw["bos_position"],
+            "n_seeds": raw["n_seeds"],
+            "seeds": raw["seeds"],
+            "eval_loss_mean": raw["eval_loss_mean"],
+            "eval_loss_std": raw["eval_loss_std"],
+            "pos0_attention_mean": raw["pos0_attention_mean_mean"],
+            "pos0_attention_std": raw["pos0_attention_mean_std"],
+            "bos_position_attention_mean": raw["bos_attention_sum_mean_mean"],
+            "bos_position_attention_std": raw["bos_attention_sum_mean_std"],
+        }
     )
+    write_table(df, "figure2_bos_position_sweep_exact")
     fig, ax = plt.subplots(figsize=(6.5, 3.8))
-    ax.plot(
+    ax.errorbar(
         df["bos_position"],
         df["pos0_attention_mean"],
+        yerr=df["pos0_attention_std"],
         marker="o",
         linewidth=2,
+        capsize=3,
         color=COLORS["pos0"],
         label="Absolute position 0",
     )
-    ax.plot(
+    ax.errorbar(
         df["bos_position"],
         df["bos_position_attention_mean"],
+        yerr=df["bos_position_attention_std"],
         marker="s",
         linewidth=2,
+        capsize=3,
         color=COLORS["bos"],
         label="Actual BOS position",
     )
@@ -482,7 +491,7 @@ def write_manifest() -> None:
         [
             "",
             "Notes:",
-            "- Figure 2 uses the cached Wikitext validation-window summary available on disk; that file does not contain per-seed error bars.",
+            "- Figure 2 now uses the train-text Wikitext103 expanded 3-seed shifted-BOS aggregate. The older cached validation-window sweep is copied as `figure2_cached_reference_bos_train_position_summary.csv`.",
             "- Figure 3 uses the available aggregate seed summary; variants with a single seed have zero/blank visible error bars.",
         ]
     )
