@@ -1,0 +1,55 @@
+{
+  "args": {
+    "positions": [
+      0,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "dataset": "wikitext",
+    "encoding": "hf_tokenizer",
+    "tokenizer_model_id": "EleutherAI/pythia-70m",
+    "data_path": "outputs/realtext_toy_data/tiny_shakespeare.txt",
+    "token_windows": "outputs/final_split_bias_transfer_official_val/pythia_70m/wikitext103_validation_windows_full_1024.pt",
+    "cached_vocab_size": 50277,
+    "cached_bos_token_id": 0,
+    "wikitext_train_split": "train",
+    "max_chars": 10000000,
+    "out": "outputs/realtext_toy_bos_train_position/wikitext_pythia_cached_val_windows",
+    "steps": 10000,
+    "batch_size": 64,
+    "eval_batch_size": 128,
+    "eval_interval": 1000,
+    "eval_split": "val",
+    "seq_len": 128,
+    "n_layer": 4,
+    "n_head": 4,
+    "d_model": 128,
+    "d_mlp": 512,
+    "lr": 0.0003,
+    "weight_decay": 0.1,
+    "seed": 0,
+    "save_checkpoints": false,
+    "device": "cuda"
+  },
+  "model": {
+    "vocab_size": 50277,
+    "bos_token_id": 0,
+    "seq_len": 128,
+    "n_layer": 4,
+    "n_head": 4,
+    "d_model": 128,
+    "d_mlp": 512,
+    "dropout": 0.0
+  },
+  "encoding_source": "cached_token_windows:outputs/final_split_bias_transfer_official_val/pythia_70m/wikitext103_validation_windows_full_1024.pt",
+  "num_tokens": 249612,
+  "split_tokens": {
+    "train": 224650,
+    "val": 12481,
+    "test": 12481
+  }
+}

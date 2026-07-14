@@ -1,0 +1,84 @@
+{
+  "bias_windows": 16,
+  "candidate_layers": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "family": "pythia",
+  "model_id": "EleutherAI/pythia-410m",
+  "model_key": "pythia_410m",
+  "selection_rule": "candidate emergence band; score=source-control+0*abs(source); validation selects mask,k,scale; test reports selected row",
+  "sink_source": "attention_sink",
+  "source_abs_bonus": 0.0,
+  "train_episodes": [
+    {
+      "attn_layer": 3,
+      "prev_mlp_layer": 2,
+      "slope": 0.02373639866709709,
+      "threshold": 0.014652378857135773
+    },
+    {
+      "attn_layer": 4,
+      "prev_mlp_layer": 3,
+      "slope": 0.014905493706464767,
+      "threshold": 0.014652378857135773
+    },
+    {
+      "attn_layer": 5,
+      "prev_mlp_layer": 4,
+      "slope": 0.08507507294416428,
+      "threshold": 0.014652378857135773
+    },
+    {
+      "attn_layer": 6,
+      "prev_mlp_layer": 5,
+      "slope": 0.29304757714271545,
+      "threshold": 0.014652378857135773
+    },
+    {
+      "attn_layer": 7,
+      "prev_mlp_layer": 6,
+      "slope": 0.060136646032333374,
+      "threshold": 0.014652378857135773
+    },
+    {
+      "attn_layer": 9,
+      "prev_mlp_layer": 8,
+      "slope": 0.02221819758415222,
+      "threshold": 0.014652378857135773
+    },
+    {
+      "attn_layer": 10,
+      "prev_mlp_layer": 9,
+      "slope": 0.08709731698036194,
+      "threshold": 0.014652378857135773
+    },
+    {
+      "attn_layer": 11,
+      "prev_mlp_layer": 10,
+      "slope": 0.0409809947013855,
+      "threshold": 0.014652378857135773
+    },
+    {
+      "attn_layer": 13,
+      "prev_mlp_layer": 12,
+      "slope": 0.12125498056411743,
+      "threshold": 0.014652378857135773
+    },
+    {
+      "attn_layer": 15,
+      "prev_mlp_layer": 14,
+      "slope": 0.027755022048950195,
+      "threshold": 0.014652378857135773
+    }
+  ],
+  "train_max_bos_attention": 0.6217291355133057,
+  "train_max_layer": 11,
+  "train_mean_bos_attention": 0.35507431626319885,
+  "window_length": 1024,
+  "windows_per_split": 16
+}

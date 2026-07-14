@@ -1,0 +1,113 @@
+{
+  "claim": "Pile and MMLU transfer outputs in this archive use neuron selections from Wikitext-side final_split_bias_transfer_source_abs_bonus0 artifacts; no Pile/MMLU-specific selection files were found or copied as tuning inputs.",
+  "wikitext_selection_artifact_root": "artifacts/final_split_bias_transfer_source_abs_bonus0",
+  "pile_eval_artifact_root": "artifacts/pile_val_sharded_transfer_full",
+  "mmlu_eval_artifact_root": "artifacts/mmlu_transfer_eval_full_test",
+  "selection_artifacts_per_model": [
+    {
+      "model_key": "gpt2",
+      "context_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/gpt2/context.json",
+      "splits_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/gpt2/splits.json",
+      "train_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/gpt2/train_attention_sink_mask.pt",
+      "val_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/gpt2/val_attention_sink_mask.pt",
+      "test_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/gpt2/test_attention_sink_mask.pt",
+      "bias16_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/gpt2/bias16_attention_sink_mask.pt",
+      "bos_only_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/gpt2/bos_only/candidate_scores.pt",
+      "pipeline_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/gpt2/pipeline_sinks_plus_bos/candidate_scores.pt",
+      "validation_grid": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/gpt2/validation_grid.csv",
+      "test_result": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/gpt2/test_result.csv"
+    },
+    {
+      "model_key": "llama3_2_1b",
+      "context_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/llama3_2_1b/context.json",
+      "splits_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/llama3_2_1b/splits.json",
+      "train_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/llama3_2_1b/train_attention_sink_mask.pt",
+      "val_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/llama3_2_1b/val_attention_sink_mask.pt",
+      "test_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/llama3_2_1b/test_attention_sink_mask.pt",
+      "bias16_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/llama3_2_1b/bias16_attention_sink_mask.pt",
+      "bos_only_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/llama3_2_1b/bos_only/candidate_scores.pt",
+      "pipeline_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/llama3_2_1b/pipeline_sinks_plus_bos/candidate_scores.pt",
+      "validation_grid": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/llama3_2_1b/validation_grid.csv",
+      "test_result": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/llama3_2_1b/test_result.csv"
+    },
+    {
+      "model_key": "mistral_7b_v0_1",
+      "context_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/mistral_7b_v0_1/context.json",
+      "splits_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/mistral_7b_v0_1/splits.json",
+      "train_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/mistral_7b_v0_1/train_attention_sink_mask.pt",
+      "val_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/mistral_7b_v0_1/val_attention_sink_mask.pt",
+      "test_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/mistral_7b_v0_1/test_attention_sink_mask.pt",
+      "bias16_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/mistral_7b_v0_1/bias16_attention_sink_mask.pt",
+      "bos_only_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/mistral_7b_v0_1/bos_only/candidate_scores.pt",
+      "pipeline_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/mistral_7b_v0_1/pipeline_sinks_plus_bos/candidate_scores.pt",
+      "validation_grid": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/mistral_7b_v0_1/validation_grid.csv",
+      "test_result": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/mistral_7b_v0_1/test_result.csv"
+    },
+    {
+      "model_key": "opt_125m",
+      "context_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/opt_125m/context.json",
+      "splits_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/opt_125m/splits.json",
+      "train_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/opt_125m/train_attention_sink_mask.pt",
+      "val_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/opt_125m/val_attention_sink_mask.pt",
+      "test_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/opt_125m/test_attention_sink_mask.pt",
+      "bias16_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/opt_125m/bias16_attention_sink_mask.pt",
+      "bos_only_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/opt_125m/bos_only/candidate_scores.pt",
+      "pipeline_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/opt_125m/pipeline_sinks_plus_bos/candidate_scores.pt",
+      "validation_grid": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/opt_125m/validation_grid.csv",
+      "test_result": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/opt_125m/test_result.csv"
+    },
+    {
+      "model_key": "phi_1_5",
+      "context_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/phi_1_5/context.json",
+      "splits_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/phi_1_5/splits.json",
+      "train_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/phi_1_5/train_attention_sink_mask.pt",
+      "val_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/phi_1_5/val_attention_sink_mask.pt",
+      "test_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/phi_1_5/test_attention_sink_mask.pt",
+      "bias16_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/phi_1_5/bias16_attention_sink_mask.pt",
+      "bos_only_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/phi_1_5/bos_only/candidate_scores.pt",
+      "pipeline_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/phi_1_5/pipeline_sinks_plus_bos/candidate_scores.pt",
+      "validation_grid": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/phi_1_5/validation_grid.csv",
+      "test_result": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/phi_1_5/test_result.csv"
+    },
+    {
+      "model_key": "pythia_410m",
+      "context_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/pythia_410m/context.json",
+      "splits_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/pythia_410m/splits.json",
+      "train_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/pythia_410m/train_attention_sink_mask.pt",
+      "val_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/pythia_410m/val_attention_sink_mask.pt",
+      "test_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/pythia_410m/test_attention_sink_mask.pt",
+      "bias16_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/pythia_410m/bias16_attention_sink_mask.pt",
+      "bos_only_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/pythia_410m/bos_only/candidate_scores.pt",
+      "pipeline_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/pythia_410m/pipeline_sinks_plus_bos/candidate_scores.pt",
+      "validation_grid": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/pythia_410m/validation_grid.csv",
+      "test_result": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/pythia_410m/test_result.csv"
+    },
+    {
+      "model_key": "qwen3_0_6b",
+      "context_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_0_6b/context.json",
+      "splits_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_0_6b/splits.json",
+      "train_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_0_6b/train_attention_sink_mask.pt",
+      "val_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_0_6b/val_attention_sink_mask.pt",
+      "test_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_0_6b/test_attention_sink_mask.pt",
+      "bias16_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_0_6b/bias16_attention_sink_mask.pt",
+      "bos_only_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_0_6b/bos_only/candidate_scores.pt",
+      "pipeline_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_0_6b/pipeline_sinks_plus_bos/candidate_scores.pt",
+      "validation_grid": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_0_6b/validation_grid.csv",
+      "test_result": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_0_6b/test_result.csv"
+    },
+    {
+      "model_key": "qwen3_1_7b",
+      "context_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_1_7b/context.json",
+      "splits_json": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_1_7b/splits.json",
+      "train_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_1_7b/train_attention_sink_mask.pt",
+      "val_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_1_7b/val_attention_sink_mask.pt",
+      "test_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_1_7b/test_attention_sink_mask.pt",
+      "bias16_attention_sink_mask": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_1_7b/bias16_attention_sink_mask.pt",
+      "bos_only_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_1_7b/bos_only/candidate_scores.pt",
+      "pipeline_candidate_scores": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_1_7b/pipeline_sinks_plus_bos/candidate_scores.pt",
+      "validation_grid": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_1_7b/validation_grid.csv",
+      "test_result": "outputs/preserved_main_paper_figures/artifacts/final_split_bias_transfer_source_abs_bonus0/qwen3_1_7b/test_result.csv"
+    }
+  ],
+  "generated_utc": "2026-07-14T04:31:18Z"
+}

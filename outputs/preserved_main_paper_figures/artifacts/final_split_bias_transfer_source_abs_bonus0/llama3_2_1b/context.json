@@ -1,0 +1,58 @@
+{
+  "bias_windows": 16,
+  "candidate_layers": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "family": "llama",
+  "model_id": "unsloth/Llama-3.2-1B",
+  "model_key": "llama3_2_1b",
+  "selection_rule": "candidate emergence band; score=source-control+0*abs(source); validation selects mask,k,scale; test reports selected row",
+  "sink_source": "attention_sink",
+  "source_abs_bonus": 0.0,
+  "train_episodes": [
+    {
+      "attn_layer": 1,
+      "prev_mlp_layer": 0,
+      "slope": 0.38096559047698975,
+      "threshold": 0.01904827952384949
+    },
+    {
+      "attn_layer": 2,
+      "prev_mlp_layer": 1,
+      "slope": 0.0455363392829895,
+      "threshold": 0.01904827952384949
+    },
+    {
+      "attn_layer": 9,
+      "prev_mlp_layer": 8,
+      "slope": 0.04211241006851196,
+      "threshold": 0.01904827952384949
+    },
+    {
+      "attn_layer": 10,
+      "prev_mlp_layer": 9,
+      "slope": 0.15776696801185608,
+      "threshold": 0.01904827952384949
+    },
+    {
+      "attn_layer": 11,
+      "prev_mlp_layer": 10,
+      "slope": 0.0740780234336853,
+      "threshold": 0.01904827952384949
+    },
+    {
+      "attn_layer": 13,
+      "prev_mlp_layer": 12,
+      "slope": 0.05159062147140503,
+      "threshold": 0.01904827952384949
+    }
+  ],
+  "train_max_bos_attention": 0.768670380115509,
+  "train_max_layer": 2,
+  "train_mean_bos_attention": 0.5533275008201599,
+  "window_length": 1024,
+  "windows_per_split": 16
+}

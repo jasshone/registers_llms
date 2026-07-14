@@ -1,0 +1,19 @@
+family,model_key,model_id,split,status,mask,mode,topk,scale,layers,candidate_layers,sink_positions,bos_before_mean,bos_after_mean,dummy_after_mean,dummy_minus_bos_mean,baseline_ppl,intervened_ppl,ppl_ratio,ppl_change_pct,delta_mean_nll,selection_reason,error,source_abs_bonus,traceback,val_dummy_minus_bos_mean,val_ppl_ratio
+mistral,mistral_7b_v0_1,mistralai/Mistral-7B-v0.1,test,ok,bos_only,transfer,1,2.0,1:1,0 1 2 3,16,0.4577699899673462,0.03507687896490097,0.37342187762260437,0.3383450210094452,6.59615758364507,6.5582909833657,0.9942592941725257,-0.5740705827474324,-0.005757247014945177,reloc>=0.30_min_val_ppl,,0.0,,0.3506460189819336,0.9902028759962255
+gpt2,gpt2,gpt2,test,ok,bos_only,transfer,4,3.0,1:1 2:3,0 1 2 3 4 5,16,0.3437361419200897,0.016300784423947334,0.3169412612915039,0.3006404936313629,35.70158723875051,35.78610993913171,1.0023674773845757,0.23674773845756558,0.0023646793253502274,reloc>=0.30_min_val_ppl,,0.0,,0.3223590552806854,1.0016398862611748
+pythia,pythia_410m,EleutherAI/pythia-410m,test,ok,bos_only,transfer,4,3.0,5:4,3 4 5 6 7 8,16,0.3459063768386841,0.020955577492713928,0.3368782103061676,0.3159226179122925,26.6372972939338,27.112620965093843,1.017844290504213,1.78442905042131,0.017686950146627467,reloc>=0.30_min_val_ppl,,0.0,,0.33325135707855225,1.0133513035255954
+llama,llama3_2_1b,unsloth/Llama-3.2-1B,test,ok,bos_only,transfer,4,1.0,0:2 1:2,0 1 2 3,16,0.5395717620849609,0.05711585655808449,0.4537140429019928,0.3965981900691986,13.370967978011876,14.576342028884731,1.090148600524289,9.014860052428908,0.08631401770508784,reloc>=0.30_min_val_ppl,,0.0,,0.41398558020591736,1.0935666394740713
+qwen3,qwen3_0_6b,Qwen/Qwen3-0.6B,test,error,,,,,,,,,,,,,,,,,,"ValueError('no positive validation relocation; best relocation=-0.000163391, ppl_ratio=23.8065, mask=bos_only, topk=8, scale=1.25')",,"Traceback (most recent call last):
+  File ""/workspace/registers_llms/run_final_split_bias_transfer.py"", line 670, in main
+    row = run_one(cfg, root, windows_per_split, args.force, args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/workspace/registers_llms/run_final_split_bias_transfer.py"", line 555, in run_one
+    best = choose_validation_row(validation_rows)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/workspace/registers_llms/run_final_split_bias_transfer.py"", line 442, in choose_validation_row
+    raise ValueError(
+ValueError: no positive validation relocation; best relocation=-0.000163391, ppl_ratio=23.8065, mask=bos_only, topk=8, scale=1.25
+",,
+qwen3,qwen3_1_7b,Qwen/Qwen3-1.7B,test,ok,bos_only,transfer,1,3.0,2:1,0 1 2 3 4 5,16,0.452629953622818,0.0007567931897938251,0.4484696686267853,0.44771286845207214,21.330408092074865,20.835774439994573,0.9768108678490747,-2.318913215092533,-0.023462230275919094,reloc>=0.30_min_val_ppl,,0.0,,0.45498111844062805,0.9678923965382809
+opt,opt_125m,facebook/opt-125m,test,ok,bos_only,transfer,8,3.0,0:8,0 1 2 3 4,16,0.48825064301490784,0.028762290254235268,0.47152888774871826,0.44276657700538635,41.69105818166056,42.075454597753165,1.009220116563549,0.9220116563549041,0.009177870764411011,reloc>=0.30_min_val_ppl,,0.0,,0.46418002247810364,1.003751882586497
+phi,phi_1_5,microsoft/phi-1_5,test,ok,bos_only,transfer,2,3.0,0:1 1:1,0 1 2 3 4,16,0.5452651381492615,0.011047649197280407,0.5031819343566895,0.49213430285453796,28.927456152462764,28.993467926391048,1.0022819764579496,0.2281976457949586,0.002279376703972602,reloc>=0.30_min_val_ppl,,0.0,,0.45294344425201416,0.9992318369162012

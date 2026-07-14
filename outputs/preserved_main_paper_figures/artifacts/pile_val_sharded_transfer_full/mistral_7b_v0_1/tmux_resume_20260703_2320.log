@@ -1,0 +1,13 @@
+[start] mistral_7b_v0_1 shard 0/1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   2%|▏         | 6/291 [00:00<00:05, 49.36it/s]Loading weights:   8%|▊         | 22/291 [00:00<00:02, 97.85it/s]Loading weights:  11%|█         | 32/291 [00:00<00:02, 96.20it/s]Loading weights:  15%|█▌        | 45/291 [00:00<00:02, 106.11it/s]Loading weights:  20%|██        | 59/291 [00:00<00:02, 111.29it/s]Loading weights:  25%|██▌       | 73/291 [00:00<00:01, 118.59it/s]Loading weights:  30%|██▉       | 86/291 [00:00<00:01, 116.27it/s]Loading weights:  34%|███▍      | 100/291 [00:00<00:01, 121.94it/s]Loading weights:  39%|███▉      | 113/291 [00:01<00:01, 120.41it/s]Loading weights:  44%|████▎     | 127/291 [00:01<00:01, 125.10it/s]Loading weights:  48%|████▊     | 140/291 [00:01<00:01, 122.80it/s]Loading weights:  53%|█████▎    | 154/291 [00:01<00:01, 126.45it/s]Loading weights:  57%|█████▋    | 167/291 [00:01<00:00, 124.00it/s]Loading weights:  63%|██████▎   | 182/291 [00:01<00:00, 130.98it/s]Loading weights:  67%|██████▋   | 196/291 [00:01<00:00, 124.55it/s]Loading weights:  73%|███████▎  | 211/291 [00:01<00:00, 131.24it/s]Loading weights:  77%|███████▋  | 225/291 [00:01<00:00, 129.38it/s]Loading weights:  82%|████████▏ | 239/291 [00:01<00:00, 128.30it/s]Loading weights:  88%|████████▊ | 256/291 [00:02<00:00, 134.07it/s]Loading weights:  93%|█████████▎| 270/291 [00:02<00:00, 131.56it/s]Loading weights:  98%|█████████▊| 284/291 [00:02<00:00, 129.80it/s]Loading weights: 100%|██████████| 291/291 [00:02<00:00, 123.59it/s]
+[resume] mistral_7b_v0_1: skipping 162800 completed shard windows
+[resume-skip] mistral_7b_v0_1: 25000/162800
+[resume-skip] mistral_7b_v0_1: 50000/162800
+[resume-skip] mistral_7b_v0_1: 75000/162800
+[resume-skip] mistral_7b_v0_1: 100000/162800
+[resume-skip] mistral_7b_v0_1: 125000/162800
+[resume-skip] mistral_7b_v0_1: 150000/162800
+[resume-skip] mistral_7b_v0_1: reached 162800; resuming eval
+[done] mistral_7b_v0_1: windows=376769 reloc=0.335661 ppl=0.995637 wps=4.582

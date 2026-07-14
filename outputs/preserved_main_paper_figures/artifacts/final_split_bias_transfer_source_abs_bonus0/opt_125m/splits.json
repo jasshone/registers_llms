@@ -1,0 +1,25 @@
+{
+  "bias_windows": 16,
+  "model_id": "facebook/opt-125m",
+  "model_key": "opt_125m",
+  "slices": {
+    "extra_bias": [
+      48,
+      48
+    ],
+    "test": [
+      32,
+      48
+    ],
+    "train": [
+      0,
+      16
+    ],
+    "val": [
+      16,
+      32
+    ]
+  },
+  "window_length": 1024,
+  "windows_per_split": 16
+}

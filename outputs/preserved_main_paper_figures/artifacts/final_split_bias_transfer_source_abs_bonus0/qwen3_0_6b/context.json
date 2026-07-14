@@ -1,0 +1,96 @@
+{
+  "bias_windows": 16,
+  "candidate_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "family": "qwen3",
+  "model_id": "Qwen/Qwen3-0.6B",
+  "model_key": "qwen3_0_6b",
+  "selection_rule": "candidate emergence band; score=source-control+0*abs(source); validation selects mask,k,scale; test reports selected row",
+  "sink_source": "attention_sink",
+  "source_abs_bonus": 0.0,
+  "train_episodes": [
+    {
+      "attn_layer": 3,
+      "prev_mlp_layer": 2,
+      "slope": 0.6256697773933411,
+      "threshold": 0.03128348886966705
+    },
+    {
+      "attn_layer": 5,
+      "prev_mlp_layer": 4,
+      "slope": 0.08096468448638916,
+      "threshold": 0.03128348886966705
+    },
+    {
+      "attn_layer": 8,
+      "prev_mlp_layer": 7,
+      "slope": 0.0625232458114624,
+      "threshold": 0.03128348886966705
+    },
+    {
+      "attn_layer": 14,
+      "prev_mlp_layer": 13,
+      "slope": 0.15248781442642212,
+      "threshold": 0.03128348886966705
+    },
+    {
+      "attn_layer": 16,
+      "prev_mlp_layer": 15,
+      "slope": 0.04677262902259827,
+      "threshold": 0.03128348886966705
+    },
+    {
+      "attn_layer": 18,
+      "prev_mlp_layer": 17,
+      "slope": 0.08444175124168396,
+      "threshold": 0.03128348886966705
+    },
+    {
+      "attn_layer": 19,
+      "prev_mlp_layer": 18,
+      "slope": 0.08777692914009094,
+      "threshold": 0.03128348886966705
+    },
+    {
+      "attn_layer": 20,
+      "prev_mlp_layer": 19,
+      "slope": 0.06534320116043091,
+      "threshold": 0.03128348886966705
+    },
+    {
+      "attn_layer": 21,
+      "prev_mlp_layer": 20,
+      "slope": 0.0999748706817627,
+      "threshold": 0.03128348886966705
+    },
+    {
+      "attn_layer": 23,
+      "prev_mlp_layer": 22,
+      "slope": 0.03971213102340698,
+      "threshold": 0.03128348886966705
+    },
+    {
+      "attn_layer": 24,
+      "prev_mlp_layer": 23,
+      "slope": 0.04635339975357056,
+      "threshold": 0.03128348886966705
+    },
+    {
+      "attn_layer": 27,
+      "prev_mlp_layer": 26,
+      "slope": 0.09442728757858276,
+      "threshold": 0.03128348886966705
+    }
+  ],
+  "train_max_bos_attention": 0.7642698884010315,
+  "train_max_layer": 27,
+  "train_mean_bos_attention": 0.47366437315940857,
+  "window_length": 1024,
+  "windows_per_split": 16
+}

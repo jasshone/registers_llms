@@ -1,0 +1,65 @@
+{
+  "bias_windows": 16,
+  "candidate_layers": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "family": "opt",
+  "model_id": "facebook/opt-125m",
+  "model_key": "opt_125m",
+  "selection_rule": "candidate emergence band; score=source-control+0*abs(source); validation selects mask,k,scale; test reports selected row",
+  "sink_source": "attention_sink",
+  "source_abs_bonus": 0.0,
+  "train_episodes": [
+    {
+      "attn_layer": 1,
+      "prev_mlp_layer": 0,
+      "slope": 0.20736463367938995,
+      "threshold": 0.012054210156202318
+    },
+    {
+      "attn_layer": 2,
+      "prev_mlp_layer": 1,
+      "slope": 0.24108420312404633,
+      "threshold": 0.012054210156202318
+    },
+    {
+      "attn_layer": 3,
+      "prev_mlp_layer": 2,
+      "slope": 0.17904040217399597,
+      "threshold": 0.012054210156202318
+    },
+    {
+      "attn_layer": 4,
+      "prev_mlp_layer": 3,
+      "slope": 0.020184636116027832,
+      "threshold": 0.012054210156202318
+    },
+    {
+      "attn_layer": 6,
+      "prev_mlp_layer": 5,
+      "slope": 0.01627594232559204,
+      "threshold": 0.012054210156202318
+    },
+    {
+      "attn_layer": 8,
+      "prev_mlp_layer": 7,
+      "slope": 0.01965773105621338,
+      "threshold": 0.012054210156202318
+    },
+    {
+      "attn_layer": 10,
+      "prev_mlp_layer": 9,
+      "slope": 0.1105806827545166,
+      "threshold": 0.012054210156202318
+    }
+  ],
+  "train_max_bos_attention": 0.6626629829406738,
+  "train_max_layer": 4,
+  "train_mean_bos_attention": 0.5025296211242676,
+  "window_length": 1024,
+  "windows_per_split": 16
+}

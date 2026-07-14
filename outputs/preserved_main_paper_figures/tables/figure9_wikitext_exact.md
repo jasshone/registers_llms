@@ -1,0 +1,9 @@
+| model_key | model_id | family | baseline_ppl | intervened_ppl | ppl_ratio | dummy_minus_bos_mean | topk | scale | dataset |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| mistral_7b_v0_1 | mistralai/Mistral-7B-v0.1 | mistral | 6.596157584 | 6.558290983 | 0.9942592942 | 0.338345021 | 1 | 2 | Wikitext |
+| gpt2 | gpt2 | gpt2 | 35.70158724 | 35.78610994 | 1.002367477 | 0.3006404936 | 4 | 3 | Wikitext |
+| pythia_410m | EleutherAI/pythia-410m | pythia | 26.63729729 | 27.11262097 | 1.017844291 | 0.3159226179 | 4 | 3 | Wikitext |
+| llama3_2_1b | unsloth/Llama-3.2-1B | llama | 13.37096798 | 14.57634203 | 1.090148601 | 0.3965981901 | 4 | 1 | Wikitext |
+| qwen3_1_7b | Qwen/Qwen3-1.7B | qwen3 | 21.33040809 | 20.83577444 | 0.9768108678 | 0.4477128685 | 1 | 3 | Wikitext |
+| opt_125m | facebook/opt-125m | opt | 41.69105818 | 42.0754546 | 1.009220117 | 0.442766577 | 8 | 3 | Wikitext |
+| phi_1_5 | microsoft/phi-1_5 | phi | 28.92745615 | 28.99346793 | 1.002281976 | 0.4921343029 | 2 | 3 | Wikitext |

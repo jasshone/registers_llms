@@ -1,0 +1,90 @@
+{
+  "bias_windows": 16,
+  "candidate_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "family": "qwen3",
+  "model_id": "Qwen/Qwen3-1.7B",
+  "model_key": "qwen3_1_7b",
+  "selection_rule": "candidate emergence band; score=source-control+0*abs(source); validation selects mask,k,scale; test reports selected row",
+  "sink_source": "attention_sink",
+  "source_abs_bonus": 0.0,
+  "train_episodes": [
+    {
+      "attn_layer": 3,
+      "prev_mlp_layer": 2,
+      "slope": 0.5663961172103882,
+      "threshold": 0.02831980586051941
+    },
+    {
+      "attn_layer": 5,
+      "prev_mlp_layer": 4,
+      "slope": 0.06422019004821777,
+      "threshold": 0.02831980586051941
+    },
+    {
+      "attn_layer": 8,
+      "prev_mlp_layer": 7,
+      "slope": 0.107524573802948,
+      "threshold": 0.02831980586051941
+    },
+    {
+      "attn_layer": 14,
+      "prev_mlp_layer": 13,
+      "slope": 0.12925715744495392,
+      "threshold": 0.02831980586051941
+    },
+    {
+      "attn_layer": 15,
+      "prev_mlp_layer": 14,
+      "slope": 0.03691396117210388,
+      "threshold": 0.02831980586051941
+    },
+    {
+      "attn_layer": 18,
+      "prev_mlp_layer": 17,
+      "slope": 0.08094409108161926,
+      "threshold": 0.02831980586051941
+    },
+    {
+      "attn_layer": 19,
+      "prev_mlp_layer": 18,
+      "slope": 0.06271210312843323,
+      "threshold": 0.02831980586051941
+    },
+    {
+      "attn_layer": 20,
+      "prev_mlp_layer": 19,
+      "slope": 0.09754770994186401,
+      "threshold": 0.02831980586051941
+    },
+    {
+      "attn_layer": 21,
+      "prev_mlp_layer": 20,
+      "slope": 0.06308126449584961,
+      "threshold": 0.02831980586051941
+    },
+    {
+      "attn_layer": 23,
+      "prev_mlp_layer": 22,
+      "slope": 0.1273331642150879,
+      "threshold": 0.02831980586051941
+    },
+    {
+      "attn_layer": 27,
+      "prev_mlp_layer": 26,
+      "slope": 0.057115793228149414,
+      "threshold": 0.02831980586051941
+    }
+  ],
+  "train_max_bos_attention": 0.7554435729980469,
+  "train_max_layer": 24,
+  "train_mean_bos_attention": 0.45575764775276184,
+  "window_length": 1024,
+  "windows_per_split": 16
+}

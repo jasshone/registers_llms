@@ -1,0 +1,66 @@
+{
+  "bias_windows": 16,
+  "candidate_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "family": "gpt2",
+  "model_id": "gpt2",
+  "model_key": "gpt2",
+  "selection_rule": "candidate emergence band; score=source-control+0*abs(source); validation selects mask,k,scale; test reports selected row",
+  "sink_source": "attention_sink",
+  "source_abs_bonus": 0.0,
+  "train_episodes": [
+    {
+      "attn_layer": 1,
+      "prev_mlp_layer": 0,
+      "slope": 0.018601827323436737,
+      "threshold": 0.010076975077390672
+    },
+    {
+      "attn_layer": 2,
+      "prev_mlp_layer": 1,
+      "slope": 0.09086107462644577,
+      "threshold": 0.010076975077390672
+    },
+    {
+      "attn_layer": 3,
+      "prev_mlp_layer": 2,
+      "slope": 0.20153950154781342,
+      "threshold": 0.010076975077390672
+    },
+    {
+      "attn_layer": 4,
+      "prev_mlp_layer": 3,
+      "slope": 0.040800243616104126,
+      "threshold": 0.010076975077390672
+    },
+    {
+      "attn_layer": 5,
+      "prev_mlp_layer": 4,
+      "slope": 0.1819610297679901,
+      "threshold": 0.010076975077390672
+    },
+    {
+      "attn_layer": 7,
+      "prev_mlp_layer": 6,
+      "slope": 0.09911146759986877,
+      "threshold": 0.010076975077390672
+    },
+    {
+      "attn_layer": 9,
+      "prev_mlp_layer": 8,
+      "slope": 0.019272983074188232,
+      "threshold": 0.010076975077390672
+    }
+  ],
+  "train_max_bos_attention": 0.5832911729812622,
+  "train_max_layer": 7,
+  "train_mean_bos_attention": 0.3606851100921631,
+  "window_length": 1023,
+  "windows_per_split": 16
+}

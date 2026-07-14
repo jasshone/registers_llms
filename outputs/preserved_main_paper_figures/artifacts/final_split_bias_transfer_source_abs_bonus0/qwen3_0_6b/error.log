@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/registers_llms/run_final_split_bias_transfer.py", line 670, in main
+    row = run_one(cfg, root, windows_per_split, args.force, args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/registers_llms/run_final_split_bias_transfer.py", line 555, in run_one
+    best = choose_validation_row(validation_rows)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/registers_llms/run_final_split_bias_transfer.py", line 442, in choose_validation_row
+    raise ValueError(
+ValueError: no positive validation relocation; best relocation=-0.000163391, ppl_ratio=23.8065, mask=bos_only, topk=8, scale=1.25
+

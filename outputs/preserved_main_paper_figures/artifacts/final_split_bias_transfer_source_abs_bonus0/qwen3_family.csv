@@ -1,0 +1,13 @@
+family,model_key,model_id,split,status,mask,mode,topk,scale,layers,candidate_layers,sink_positions,bos_before_mean,bos_after_mean,dummy_after_mean,dummy_minus_bos_mean,baseline_ppl,intervened_ppl,ppl_ratio,ppl_change_pct,delta_mean_nll,selection_reason,error,source_abs_bonus,traceback,val_dummy_minus_bos_mean,val_ppl_ratio
+qwen3,qwen3_0_6b,Qwen/Qwen3-0.6B,test,error,,,,,,,,,,,,,,,,,,"ValueError('no positive validation relocation; best relocation=-0.000163391, ppl_ratio=23.8065, mask=bos_only, topk=8, scale=1.25')",,"Traceback (most recent call last):
+  File ""/workspace/registers_llms/run_final_split_bias_transfer.py"", line 670, in main
+    row = run_one(cfg, root, windows_per_split, args.force, args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/workspace/registers_llms/run_final_split_bias_transfer.py"", line 555, in run_one
+    best = choose_validation_row(validation_rows)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/workspace/registers_llms/run_final_split_bias_transfer.py"", line 442, in choose_validation_row
+    raise ValueError(
+ValueError: no positive validation relocation; best relocation=-0.000163391, ppl_ratio=23.8065, mask=bos_only, topk=8, scale=1.25
+",,
+qwen3,qwen3_1_7b,Qwen/Qwen3-1.7B,test,ok,bos_only,transfer,1,3.0,2:1,0 1 2 3 4 5,16,0.452629953622818,0.0007567931897938251,0.4484696686267853,0.44771286845207214,21.330408092074865,20.835774439994573,0.9768108678490747,-2.318913215092533,-0.023462230275919094,reloc>=0.30_min_val_ppl,,0.0,,0.45498111844062805,0.9678923965382809

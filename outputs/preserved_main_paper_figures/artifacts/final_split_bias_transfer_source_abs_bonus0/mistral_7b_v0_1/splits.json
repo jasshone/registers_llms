@@ -1,0 +1,25 @@
+{
+  "bias_windows": 16,
+  "model_id": "mistralai/Mistral-7B-v0.1",
+  "model_key": "mistral_7b_v0_1",
+  "slices": {
+    "extra_bias": [
+      48,
+      48
+    ],
+    "test": [
+      32,
+      48
+    ],
+    "train": [
+      0,
+      16
+    ],
+    "val": [
+      16,
+      32
+    ]
+  },
+  "window_length": 1024,
+  "windows_per_split": 16
+}

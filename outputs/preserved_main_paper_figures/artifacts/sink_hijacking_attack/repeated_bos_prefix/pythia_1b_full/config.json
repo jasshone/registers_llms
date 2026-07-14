@@ -1,0 +1,19 @@
+{
+  "model_id": "EleutherAI/pythia-1b",
+  "selection": "outputs/attention_jump_ablation/pythia_1b/selections/full_percentile.pt",
+  "windows": "outputs/final_split_bias_transfer_source_abs_bonus0_official_scope/pythia_1b/windows_192x1024.pt",
+  "num_windows": 192,
+  "batch_size": 4,
+  "counts": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "scale": 4.0,
+  "random_controls": 1,
+  "seed": 0
+}

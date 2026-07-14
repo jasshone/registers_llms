@@ -1,0 +1,77 @@
+{
+  "bias_windows": 16,
+  "candidate_layers": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "family": "phi",
+  "model_id": "microsoft/phi-1_5",
+  "model_key": "phi_1_5",
+  "selection_rule": "candidate emergence band; score=source-control+0*abs(source); validation selects mask,k,scale; test reports selected row",
+  "sink_source": "attention_sink",
+  "source_abs_bonus": 0.0,
+  "train_episodes": [
+    {
+      "attn_layer": 1,
+      "prev_mlp_layer": 0,
+      "slope": 0.28401461243629456,
+      "threshold": 0.014200730621814728
+    },
+    {
+      "attn_layer": 2,
+      "prev_mlp_layer": 1,
+      "slope": 0.24350640177726746,
+      "threshold": 0.014200730621814728
+    },
+    {
+      "attn_layer": 4,
+      "prev_mlp_layer": 3,
+      "slope": 0.03275454044342041,
+      "threshold": 0.014200730621814728
+    },
+    {
+      "attn_layer": 5,
+      "prev_mlp_layer": 4,
+      "slope": 0.029222071170806885,
+      "threshold": 0.014200730621814728
+    },
+    {
+      "attn_layer": 7,
+      "prev_mlp_layer": 6,
+      "slope": 0.05160081386566162,
+      "threshold": 0.014200730621814728
+    },
+    {
+      "attn_layer": 10,
+      "prev_mlp_layer": 9,
+      "slope": 0.043728768825531006,
+      "threshold": 0.014200730621814728
+    },
+    {
+      "attn_layer": 16,
+      "prev_mlp_layer": 15,
+      "slope": 0.049241483211517334,
+      "threshold": 0.014200730621814728
+    },
+    {
+      "attn_layer": 21,
+      "prev_mlp_layer": 20,
+      "slope": 0.014984488487243652,
+      "threshold": 0.014200730621814728
+    },
+    {
+      "attn_layer": 23,
+      "prev_mlp_layer": 22,
+      "slope": 0.04628032445907593,
+      "threshold": 0.014200730621814728
+    }
+  ],
+  "train_max_bos_attention": 0.6771881580352783,
+  "train_max_layer": 19,
+  "train_mean_bos_attention": 0.5655902028083801,
+  "window_length": 1024,
+  "windows_per_split": 16
+}

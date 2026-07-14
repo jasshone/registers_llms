@@ -1,0 +1,88 @@
+{
+  "bias_windows": 16,
+  "candidate_layers": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "family": "mistral",
+  "model_id": "mistralai/Mistral-7B-v0.1",
+  "model_key": "mistral_7b_v0_1",
+  "selection_rule": "candidate emergence band; score=source-control+0*abs(source); validation selects mask,k,scale; test reports selected row",
+  "sink_source": "attention_sink",
+  "source_abs_bonus": 0.0,
+  "train_episodes": [
+    {
+      "attn_layer": 1,
+      "prev_mlp_layer": 0,
+      "slope": 0.39178523421287537,
+      "threshold": 0.01958926171064377
+    },
+    {
+      "attn_layer": 14,
+      "prev_mlp_layer": 13,
+      "slope": 0.033250629901885986,
+      "threshold": 0.01958926171064377
+    },
+    {
+      "attn_layer": 15,
+      "prev_mlp_layer": 14,
+      "slope": 0.048510342836380005,
+      "threshold": 0.01958926171064377
+    },
+    {
+      "attn_layer": 17,
+      "prev_mlp_layer": 16,
+      "slope": 0.02072727680206299,
+      "threshold": 0.01958926171064377
+    },
+    {
+      "attn_layer": 18,
+      "prev_mlp_layer": 17,
+      "slope": 0.034646570682525635,
+      "threshold": 0.01958926171064377
+    },
+    {
+      "attn_layer": 19,
+      "prev_mlp_layer": 18,
+      "slope": 0.03472810983657837,
+      "threshold": 0.01958926171064377
+    },
+    {
+      "attn_layer": 20,
+      "prev_mlp_layer": 19,
+      "slope": 0.057950228452682495,
+      "threshold": 0.01958926171064377
+    },
+    {
+      "attn_layer": 21,
+      "prev_mlp_layer": 20,
+      "slope": 0.044422924518585205,
+      "threshold": 0.01958926171064377
+    },
+    {
+      "attn_layer": 22,
+      "prev_mlp_layer": 21,
+      "slope": 0.050189316272735596,
+      "threshold": 0.01958926171064377
+    },
+    {
+      "attn_layer": 27,
+      "prev_mlp_layer": 26,
+      "slope": 0.031223654747009277,
+      "threshold": 0.01958926171064377
+    },
+    {
+      "attn_layer": 29,
+      "prev_mlp_layer": 28,
+      "slope": 0.03353196382522583,
+      "threshold": 0.01958926171064377
+    }
+  ],
+  "train_max_bos_attention": 0.7297438383102417,
+  "train_max_layer": 1,
+  "train_mean_bos_attention": 0.458795428276062,
+  "window_length": 1024,
+  "windows_per_split": 16
+}
