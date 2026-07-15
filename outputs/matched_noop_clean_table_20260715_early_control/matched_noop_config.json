@@ -1,0 +1,14 @@
+{
+  "bootstrap_samples": 10000,
+  "delta": 0.05,
+  "head_kind": "sink_heavy",
+  "inputs": {
+    "llama3_2_3b": "outputs/causal_noop_full_wikitext_20260714/llama3_2_3b/wikitext_test/site_results.csv",
+    "mistral_7b_v0_1": "outputs/causal_noop_mistral_wikitext_fixed_20260714/mistral_7b_v0_1/wikitext_test/site_results.csv",
+    "pythia_1b": "outputs/causal_noop_full_wikitext_20260714/pythia_1b/wikitext_test/site_results.csv"
+  },
+  "ordinary_target": "early",
+  "paired_difference": "ordinary target disruption minus sink target disruption",
+  "seed": 12345,
+  "unit_of_analysis": "sequence-level average over matched site pairs"
+}
