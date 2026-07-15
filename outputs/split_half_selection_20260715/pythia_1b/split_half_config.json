@@ -1,0 +1,24 @@
+{
+  "model_key": "pythia_1b",
+  "model_id": "EleutherAI/pythia-1b",
+  "windows": "outputs/final_split_bias_transfer_source_abs_bonus0_official_scope/pythia_1b/windows_192x1024.pt",
+  "half_windows": 64,
+  "topk": 16,
+  "scale": 2.0,
+  "candidate_layers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "source_mask": "bos_only",
+  "selection_overlap": 16,
+  "selection_union": 16,
+  "selection_jaccard": 1.0,
+  "score_paths": {
+    "A": "outputs/split_half_selection_20260715/pythia_1b/score_rows_A.csv",
+    "B": "outputs/split_half_selection_20260715/pythia_1b/score_rows_B.csv"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "step": 3000,
+  "candidate_layers": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "train_bos_by_layer": "0.0747751 0.021379 0.0460099 0.0879519",
+  "train_max_head_bos": 0.10841859877109528,
+  "train_mean_bos": 0.05752897262573242,
+  "train_ppl": 117.17105427143402,
+  "train_episodes": [
+    {
+      "attn_layer": 2,
+      "prev_mlp_layer": 1,
+      "slope": 0.024630829691886902,
+      "threshold": 0.0020971031859517097
+    },
+    {
+      "attn_layer": 3,
+      "prev_mlp_layer": 2,
+      "slope": 0.041942063719034195,
+      "threshold": 0.0020971031859517097
+    }
+  ],
+  "attention_sink_positions_train": 0,
+  "attention_sink_windows_train": 0
+}

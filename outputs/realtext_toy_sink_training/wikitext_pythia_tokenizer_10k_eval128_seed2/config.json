@@ -1,0 +1,44 @@
+{
+  "args": {
+    "dataset": "wikitext",
+    "encoding": "hf_tokenizer",
+    "tokenizer_model_id": "EleutherAI/pythia-70m",
+    "data_path": "outputs/realtext_toy_data/tiny_shakespeare.txt",
+    "wikitext_train_split": "train",
+    "max_chars": 10000000,
+    "out": "outputs/realtext_toy_sink_training/wikitext_pythia_tokenizer_10k_eval128_seed2",
+    "steps": 10000,
+    "batch_size": 64,
+    "eval_batch_size": 128,
+    "eval_interval": 1000,
+    "seq_len": 128,
+    "n_layer": 4,
+    "n_head": 4,
+    "d_model": 128,
+    "d_mlp": 512,
+    "lr": 0.0003,
+    "weight_decay": 0.1,
+    "seed": 2,
+    "topk": 32,
+    "random_controls": 3,
+    "suppress_layer0_bos_key_train": false,
+    "save_checkpoints": true
+  },
+  "model": {
+    "vocab_size": 50277,
+    "bos_token_id": 0,
+    "seq_len": 128,
+    "n_layer": 4,
+    "n_head": 4,
+    "d_model": 128,
+    "d_mlp": 512,
+    "dropout": 0.0
+  },
+  "encoding_source": "EleutherAI/pythia-70m",
+  "num_tokens": 2205403,
+  "split_tokens": {
+    "train": 1984862,
+    "val": 110270,
+    "test": 110271
+  }
+}

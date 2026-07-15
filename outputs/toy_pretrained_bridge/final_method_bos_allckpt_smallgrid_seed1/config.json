@@ -1,0 +1,61 @@
+{
+  "args": {
+    "run_dir": "outputs/realtext_toy_sink_training/wikitext_pythia_tokenizer_10k_eval128_seed1",
+    "token_cache": "outputs/realtext_toy_data/wikitext103_train10m_pythia70m_tokens.pt",
+    "out": "outputs/toy_pretrained_bridge/final_method_bos_allckpt_smallgrid_seed1",
+    "steps": null,
+    "selection_examples": 128,
+    "bias_examples": 128,
+    "eval_examples": 64,
+    "chunk_size": 16,
+    "topks": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "scale_preset": "rescue",
+    "scales": [
+      0.9,
+      1.0,
+      2.0,
+      3.0,
+      5.0,
+      8.0,
+      10.0,
+      16.0,
+      24.0,
+      32.0
+    ],
+    "source_abs_bonus": 0.0,
+    "attention_threshold": 0.2,
+    "min_query_count": 32,
+    "masks": [
+      "bos_only"
+    ],
+    "device": "auto"
+  },
+  "token_cache_metadata": {
+    "dataset": "Salesforce/wikitext",
+    "config": "wikitext-103-raw-v1",
+    "split": "train",
+    "max_chars": 10000000,
+    "actual_chars": 10000000,
+    "nonempty_rows_seen": 21743,
+    "tokenizer_model_id": "EleutherAI/pythia-70m",
+    "vocab_size": 50277,
+    "bos_token_id": 0
+  },
+  "scales": [
+    0.9,
+    1.0,
+    2.0,
+    3.0,
+    5.0,
+    8.0,
+    10.0,
+    16.0,
+    24.0,
+    32.0
+  ]
+}

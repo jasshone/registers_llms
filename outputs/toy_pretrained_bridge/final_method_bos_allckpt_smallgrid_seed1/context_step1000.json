@@ -1,0 +1,23 @@
+{
+  "step": 1000,
+  "candidate_layers": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "train_bos_by_layer": "0.0561397 0.0194207 0.0427496 0.0402336",
+  "train_max_head_bos": 0.07665257900953293,
+  "train_mean_bos": 0.039635904133319855,
+  "train_ppl": 291.46422358307683,
+  "train_episodes": [
+    {
+      "attn_layer": 2,
+      "prev_mlp_layer": 1,
+      "slope": 0.023328937590122223,
+      "threshold": 0.0011664468795061112
+    }
+  ],
+  "attention_sink_positions_train": 0,
+  "attention_sink_windows_train": 0
+}
